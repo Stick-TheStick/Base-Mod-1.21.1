@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "basemod",
+	"version": "${version}",
+	"name": "Base Mod",
+	"description": "The base mod for minecraft projects that we will develop",
+	"authors": [
+		"Titainium Hat Crusaders"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/basemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dante.basemod.BaseMod"
+		],
+		"fabric-datagen": [
+			"net.dante.basemod.BaseModDataGenerator"
+		],
+		"client": [
+			"net.dante.basemod.BaseModClient"
+		]
+	},
+	"mixins": [
+		"basemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
