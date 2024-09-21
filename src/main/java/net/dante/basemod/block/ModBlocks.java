@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block",
-            new Block(AbstractBlock.Settings.create().strength(4f)
+            new Block(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.DEEPSLATE)));
 
     private static Block registerBlock(String name, Block block) {
