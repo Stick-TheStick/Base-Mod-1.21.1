@@ -1,5 +1,6 @@
 package net.dante.basemod;
 
+import net.dante.basemod.block.ModBlocks;
 import net.dante.basemod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +14,6 @@ public class BaseMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

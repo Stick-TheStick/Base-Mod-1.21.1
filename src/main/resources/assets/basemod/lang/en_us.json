@@ -1,3 +1,5 @@
 {
-  "item.basemod.example_item": "Example Item"
+  "item.basemod.example_item": "Example Item",
+
+  "block.basemod.example_block": "Example Block"
 }
