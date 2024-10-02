@@ -4,7 +4,6 @@ import net.dante.basemod.BaseMod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.entity.mob.AmbientEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -18,6 +17,10 @@ public class ModBlocks {
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block",
             new Block(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block LONG_NOSE_BLOCK = registerBlock("long_nose_block",
+            new Block(AbstractBlock.Settings.create().strength(1f).
+                    sounds(BlockSoundGroup.CANDLE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -34,6 +37,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.EXAMPLE_BLOCK);
+            entries.add((ModBlocks.LONG_NOSE_BLOCK));
         });
     }
 }
