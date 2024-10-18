@@ -4,6 +4,7 @@ import net.dante.basemod.BaseMod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -22,6 +23,14 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(1f).
                     sounds(BlockSoundGroup.CANDLE)));
 
+    public static final Block EXAMPLE_STAIR = registerBlock("example_block",
+            new StairsBlock(ModBlocks.EXAMPLE_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.BAMBOO_WOOD)));
+
+    public static final Block BLACK_ROCK_BRICKS = registerBlock("black_rock_bricks",
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(BaseMod.MOD_ID, name), block);
@@ -38,6 +47,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.EXAMPLE_BLOCK);
             entries.add((ModBlocks.LONG_NOSE_BLOCK));
+            entries.add(ModBlocks.BLACK_ROCK_BRICKS);
         });
     }
 }

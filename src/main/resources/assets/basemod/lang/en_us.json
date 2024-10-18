@@ -3,5 +3,7 @@
 
   "block.basemod.example_block": "Example Block",
 
-  "block.basemod.long_nose_block": "Long Nose Block"
+  "block.basemod.long_nose_block": "Long Nose Block",
+
+  "block.basemod.black_rock_bricks": "Black Rock Bricks"
 }
