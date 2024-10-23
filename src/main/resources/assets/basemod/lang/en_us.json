@@ -5,5 +5,8 @@
 
   "block.basemod.long_nose_block": "Long Nose Block",
 
-  "block.basemod.black_rock_bricks": "Black Rock Bricks"
+  "block.basemod.black_rock_bricks": "Black Rock Bricks",
+  "block.basemod.black_rock": "Black Rock",
+
+  "itemgroup.basemod.example_things": "Example Things"
 }

@@ -23,13 +23,13 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(1f).
                     sounds(BlockSoundGroup.CANDLE)));
 
-    public static final Block EXAMPLE_STAIR = registerBlock("example_block",
-            new StairsBlock(ModBlocks.EXAMPLE_BLOCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.BAMBOO_WOOD)));
-
     public static final Block BLACK_ROCK_BRICKS = registerBlock("black_rock_bricks",
             new Block(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+
+    public static final Block BLACK_ROCK = registerBlock("black_rock",
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .sounds(BlockSoundGroup.GILDED_BLACKSTONE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -45,9 +45,12 @@ public class ModBlocks {
         BaseMod.LOGGER.info("Registering Blocks for" + BaseMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+
             entries.add(ModBlocks.EXAMPLE_BLOCK);
-            entries.add((ModBlocks.LONG_NOSE_BLOCK));
+            entries.add(ModBlocks.LONG_NOSE_BLOCK);
+
             entries.add(ModBlocks.BLACK_ROCK_BRICKS);
+            entries.add(ModBlocks.BLACK_ROCK);
         });
     }
 }
