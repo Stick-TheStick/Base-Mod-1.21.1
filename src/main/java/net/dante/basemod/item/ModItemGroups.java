@@ -18,7 +18,11 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.EXAMPLE_ITEM);
                         entries.add(ModBlocks.EXAMPLE_BLOCK);
+
                         entries.add(ModBlocks.LONG_NOSE_BLOCK);
+
+                        entries.add(ModBlocks.EXAMPLE_STAIRS);
+                        entries.add(ModBlocks.EXAMPLE_SLAB);
                     }).build());
 
 
