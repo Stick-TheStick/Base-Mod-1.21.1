@@ -6,7 +6,11 @@
   "block.basemod.long_nose_block": "Long Nose Block",
 
   "block.basemod.example_stairs": "Example Stairs",
-  "block.basemod.example_": "Example Slab",
+  "block.basemod.example_slab": "Example Slab",
+
+  "block.basemod.example_fence": "Example Fence",
+  "block.basemod.example_fence_gate": "Example Fence Gate",
+  "block.basemod.example_wall": "Example Wall",
 
   "block.basemod.black_rock_bricks": "Black Rock Bricks",
   "block.basemod.black_rock": "Black Rock",

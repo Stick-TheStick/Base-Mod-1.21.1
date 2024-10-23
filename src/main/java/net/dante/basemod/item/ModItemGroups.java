@@ -23,6 +23,10 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.EXAMPLE_STAIRS);
                         entries.add(ModBlocks.EXAMPLE_SLAB);
+
+                        entries.add(ModBlocks.EXAMPLE_FENCE);
+                        entries.add(ModBlocks.EXAMPLE_FENCE_GATE);
+                        entries.add(ModBlocks.EXAMPLE_WALL);
                     }).build());
 
 

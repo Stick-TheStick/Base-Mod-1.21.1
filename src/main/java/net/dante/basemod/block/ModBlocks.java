@@ -2,10 +2,7 @@ package net.dante.basemod.block;
 
 import net.dante.basemod.BaseMod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -23,9 +20,15 @@ public class ModBlocks {
     public static final Block EXAMPLE_STAIRS = registerBlock("example_stairs",
             new StairsBlock(ModBlocks.EXAMPLE_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create().strength(2f).requiresTool()));
-
     public static final Block EXAMPLE_SLAB = registerBlock("example_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block EXAMPLE_FENCE = registerBlock("example_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block EXAMPLE_FENCE_GATE = registerBlock("example_fence_gate",
+            new FenceGateBlock(WoodType.DARK_OAK,AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block EXAMPLE_WALL = registerBlock("example_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
 
     public static final Block LONG_NOSE_BLOCK = registerBlock("long_nose_block",
             new Block(AbstractBlock.Settings.create().strength(1f).
@@ -36,7 +39,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
     public static final Block BLACK_ROCK = registerBlock("black_rock",
             new Block(AbstractBlock.Settings.create().strength(1f)
-                    .sounds(BlockSoundGroup.GILDED_BLACKSTONE)));
+                    .sounds(BlockSoundGroup.DEEPSLATE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

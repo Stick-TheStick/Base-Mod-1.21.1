@@ -1,6 +1,9 @@
 package net.dante.basemod;
 
 import net.dante.basemod.datagen.ModBlockTagProvider;
+import net.dante.basemod.datagen.ModItemTagProvider;
+import net.dante.basemod.datagen.ModLootTableProvider;
+import net.dante.basemod.datagen.ModModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.data.DataGenerator;
@@ -11,5 +14,8 @@ public class BaseModDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModItemTagProvider::new);
+		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModModelProvider::new);
 	}
 }
