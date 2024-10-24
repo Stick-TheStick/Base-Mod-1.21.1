@@ -1,5 +1,10 @@
 {
   "values": [
-    "basemod:black_rock_bricks"
+    "basemod:black_rock_bricks",
+    "basemod:black_rock",
+    "basemod:smooth_black_rock",
+    "basemod:black_rock_slab",
+    "basemod:black_rock_stairs",
+    "basemod:black_rock_wall"
   ]
 }

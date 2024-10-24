@@ -29,6 +29,20 @@ public class ModItemGroups {
                         entries.add(ModBlocks.EXAMPLE_WALL);
                     }).build());
 
+    public static final ItemGroup BASE_MOD_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(BaseMod.MOD_ID, "base_mod_blocks"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.EXAMPLE_ITEM))
+                    .displayName(Text.translatable("itemgroup.basemod.base_mod_blocks"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.BLACK_ROCK_BRICKS);
+                        entries.add(ModBlocks.BLACK_ROCK);
+                        entries.add(ModBlocks.SMOOTH_BLACK_ROCK);
+
+                        entries.add(ModBlocks.BLACK_ROCK_STAIRS);
+                        entries.add(ModBlocks.BLACK_ROCK_SLAB);
+                        entries.add(ModBlocks.BLACK_ROCK_WALL);
+
+                    }).build());
 
     public static void registerItemGroups(){
         BaseMod.LOGGER.info("Registering Item Groups for " + BaseMod.MOD_ID);

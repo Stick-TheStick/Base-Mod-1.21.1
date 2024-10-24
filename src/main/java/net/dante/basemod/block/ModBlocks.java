@@ -35,22 +35,22 @@ public class ModBlocks {
                     sounds(BlockSoundGroup.CANDLE)));
 
     public static final Block BLACK_ROCK_BRICKS = registerBlock("black_rock_bricks",
-            new Block(AbstractBlock.Settings.create().strength(1f)
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
     public static final Block BLACK_ROCK = registerBlock("black_rock",
-            new Block(AbstractBlock.Settings.create().strength(1f)
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block SMOOTH_BLACK_ROCK = registerBlock("smooth_black_rock",
-            new Block(AbstractBlock.Settings.create().strength(1f)
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)));
 
     public static final Block BLACK_ROCK_STAIRS = registerBlock("black_rock_stairs",
             new StairsBlock(ModBlocks.BLACK_ROCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block BLACK_ROCK_WALL = registerBlock("black_rock_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block BLACK_ROCK_SLAB = registerBlock("black_rock_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

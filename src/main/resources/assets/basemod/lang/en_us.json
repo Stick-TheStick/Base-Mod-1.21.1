@@ -22,5 +22,6 @@
 
 
 
-  "itemgroup.basemod.example_things": "Example Things"
+  "itemgroup.basemod.example_things": "Example Things",
+  "itemgroup.basemod.base_mod_blocks": "Base Mod Blocks"
 }
