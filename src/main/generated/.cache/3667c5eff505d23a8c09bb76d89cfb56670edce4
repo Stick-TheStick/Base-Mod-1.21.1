@@ -1,0 +1,14 @@
+// 1.21.1	2024-10-23T19:17:59.4861033	Base Mod/Model Definitions
+2dbdfc0276a7a46607d554466a0df15db04b6274 assets\basemod\blockstates\example_block.json
+8217bb428e53f3d285841f34847b6aa14cdcfa23 assets\basemod\models\item\example_block.json
+c2f22c33c83c764915f934bb4904da65d5a650d4 assets\basemod\models\item\black_rock.json
+8b2dbf92ea3c2bed163a1370add9a0d8364c1fdb assets\basemod\models\block\black_rock.json
+c2209739b13721ed05af716d390b03d1f6130389 assets\basemod\models\block\example_block.json
+367cff1ee3dca34bcc6f193689f1d60d4db4eb58 assets\basemod\blockstates\black_rock.json
+4fdec2d929a8607889a3bf6f27e3f202e4684f7e assets\basemod\models\block\long_nose_block.json
+3470cf7b6d7c324a31b5362cd9663376c4d173c3 assets\basemod\models\item\long_nose_block.json
+855edb04ddc6082d88ca322d9aa44528231e5679 assets\basemod\models\item\example_item.json
+0fbe92307f4928058db04398c866f7eeb3377c8d assets\basemod\models\block\black_rock_bricks.json
+a497d086ec396a2edf1cf2705a04c2b84facf2f2 assets\basemod\blockstates\long_nose_block.json
+e90420c2a60879a3ab4a9333ccb97a74f20247c5 assets\basemod\blockstates\black_rock_bricks.json
+553e82c0ae6d15b8f1dfb83f993c0ee86de6875b assets\basemod\models\item\black_rock_bricks.json

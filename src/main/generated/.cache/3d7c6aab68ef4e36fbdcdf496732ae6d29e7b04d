@@ -1,0 +1,5 @@
+// 1.21.1	2024-10-23T19:17:59.4851052	Base Mod/Block Loot Tables
+ed19ceef545b9fab7bc2cf5cc9108ca0b329fd5a data\basemod\loot_table\blocks\long_nose_block.json
+cc42c155b4ec458eb17d4ef96be7582ec81cc544 data\basemod\loot_table\blocks\black_rock.json
+3bce520f28442507a60809d6c3c4330fba404e4a data\basemod\loot_table\blocks\example_block.json
+085554c2a5717e6543b3f285adfad8894e0f22e7 data\basemod\loot_table\blocks\black_rock_bricks.json
