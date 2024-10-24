@@ -1,3 +1,6 @@
-// 1.21.1	2024-10-23T19:17:59.4871004	Base Mod/Tags for minecraft:block
+// 1.21.1	2024-10-23T20:32:11.8655177	Base Mod/Tags for minecraft:block
 c7e57c22348bce4b3d1076ba1897568b29c9067d data\minecraft\tags\block\mineable\pickaxe.json
 c7e57c22348bce4b3d1076ba1897568b29c9067d data\minecraft\tags\block\needs_iron_tool.json
+da4fc4c25e5251ab4aafa53ee7a3356ee5abcb34 data\minecraft\tags\block\fences.json
+3a50dcc79c79558abeb12319745acf103fe39204 data\minecraft\tags\block\fence_gates.json
+1a9ac4383ca40639800c05ccaf2161523bd41bf4 data\minecraft\tags\block\walls.json

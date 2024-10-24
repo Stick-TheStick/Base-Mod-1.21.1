@@ -40,6 +40,17 @@ public class ModBlocks {
     public static final Block BLACK_ROCK = registerBlock("black_rock",
             new Block(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block SMOOTH_BLACK_ROCK = registerBlock("smooth_black_rock",
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block BLACK_ROCK_STAIRS = registerBlock("black_rock_stairs",
+            new StairsBlock(ModBlocks.BLACK_ROCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block BLACK_ROCK_WALL = registerBlock("black_rock_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block BLACK_ROCK_SLAB = registerBlock("black_rock_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -61,6 +72,11 @@ public class ModBlocks {
 
             entries.add(ModBlocks.BLACK_ROCK_BRICKS);
             entries.add(ModBlocks.BLACK_ROCK);
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK);
+
+            entries.add(ModBlocks.BLACK_ROCK_STAIRS);
+            entries.add(ModBlocks.BLACK_ROCK_SLAB);
+            entries.add(ModBlocks.BLACK_ROCK_WALL);
         });
     }
 }

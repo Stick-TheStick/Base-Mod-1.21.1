@@ -14,6 +14,13 @@
 
   "block.basemod.black_rock_bricks": "Black Rock Bricks",
   "block.basemod.black_rock": "Black Rock",
+  "block.basemod.smooth_black_rock": "Smooth Black Rock",
+
+  "block.basemod.black_rock_stairs": "Black Rock Stairs",
+  "block.basemod.black_rock_slab": "Black Rock Slab",
+  "block.basemod.black_rock_wall": "Black Rock Wall",
+
+
 
   "itemgroup.basemod.example_things": "Example Things"
 }
