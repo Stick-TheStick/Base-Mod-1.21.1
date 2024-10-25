@@ -52,6 +52,22 @@ public class ModBlocks {
     public static final Block BLACK_ROCK_SLAB = registerBlock("black_rock_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
+    public static final Block BLACK_ROCK_BRICK_STAIRS = registerBlock("black_rock_brick_stair",
+            new StairsBlock(ModBlocks.BLACK_ROCK_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block BLACK_ROCK_BRICK_WALL = registerBlock("black_rock_brick_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block BLACK_ROCK_BRICK_SLAB = registerBlock("black_rock_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
+    public static final Block SMOOTH_BLACK_ROCK_STAIRS = registerBlock("smooth_black_rock_stairs",
+            new StairsBlock(ModBlocks.SMOOTH_BLACK_ROCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block SMOOTH_BLACK_ROCK_WALL = registerBlock("smooth_black_rock_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block SMOOTH_BLACK_ROCK_SLAB = registerBlock("smooth_black_rock_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(BaseMod.MOD_ID, name), block);
@@ -74,9 +90,17 @@ public class ModBlocks {
             entries.add(ModBlocks.BLACK_ROCK);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK);
 
+            entries.add(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
+            entries.add(ModBlocks.BLACK_ROCK_BRICK_WALL);
+            entries.add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
+
             entries.add(ModBlocks.BLACK_ROCK_STAIRS);
             entries.add(ModBlocks.BLACK_ROCK_SLAB);
             entries.add(ModBlocks.BLACK_ROCK_WALL);
+
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
         });
     }
 }

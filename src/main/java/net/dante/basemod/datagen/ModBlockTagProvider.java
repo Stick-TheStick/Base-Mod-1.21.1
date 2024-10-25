@@ -22,7 +22,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.BLACK_ROCK_SLAB)
                 .add(ModBlocks.BLACK_ROCK_STAIRS)
-                .add(ModBlocks.BLACK_ROCK_WALL);
+                .add(ModBlocks.BLACK_ROCK_WALL)
+
+                .add(ModBlocks.BLACK_ROCK_BRICK_STAIRS)
+                .add(ModBlocks.BLACK_ROCK_BRICK_WALL)
+                .add(ModBlocks.BLACK_ROCK_BRICK_SLAB)
+
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS)
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL)
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLACK_ROCK_BRICKS)
@@ -31,13 +39,23 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.BLACK_ROCK_SLAB)
                 .add(ModBlocks.BLACK_ROCK_STAIRS)
-                .add(ModBlocks.BLACK_ROCK_WALL);
+                .add(ModBlocks.BLACK_ROCK_WALL)
+
+                .add(ModBlocks.BLACK_ROCK_BRICK_STAIRS)
+                .add(ModBlocks.BLACK_ROCK_BRICK_WALL)
+                .add(ModBlocks.BLACK_ROCK_BRICK_SLAB)
+
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS)
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL)
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.EXAMPLE_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.EXAMPLE_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.EXAMPLE_WALL);
 
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.BLACK_ROCK_WALL);
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.BLACK_ROCK_BRICK_WALL);
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
     }
 
 }

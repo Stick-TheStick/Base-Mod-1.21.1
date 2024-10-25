@@ -1,6 +1,8 @@
 {
   "values": [
     "basemod:example_wall",
-    "basemod:black_rock_wall"
+    "basemod:black_rock_wall",
+    "basemod:black_rock_brick_wall",
+    "basemod:smooth_black_rock_wall"
   ]
 }

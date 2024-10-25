@@ -1,14 +1,20 @@
-// 1.21.1	2024-10-24T12:27:18.7290316	Base Mod/Block Loot Tables
+// 1.21.1	2024-10-24T21:25:38.8838833	Base Mod/Block Loot Tables
 fd409505ad3d3cab6f1560998629778da07c86bd data\basemod\loot_table\blocks\black_rock_wall.json
 2e6620637726d2bd13860136415c5aa723b98622 data\basemod\loot_table\blocks\example_fence.json
+85e76021cd0689cf85ddd1026e90465b7b11c5bf data\basemod\loot_table\blocks\black_rock_brick_slab.json
+150a4149930063be0d31fbb139da312af1c54869 data\basemod\loot_table\blocks\smooth_black_rock_wall.json
 3829afee89ec1e8af5049bb30b76991624c36fc2 data\basemod\loot_table\blocks\black_rock_stairs.json
 0bdc77881718c3ff073a3267ddfbf9c45c712761 data\basemod\loot_table\blocks\example_stairs.json
+03e300439eba0fe904c49bddb75c4091d9be4c68 data\basemod\loot_table\blocks\smooth_black_rock_slab.json
 81688034d52cd95c743024ab771a9cfafb3b216f data\basemod\loot_table\blocks\example_slab.json
 b8c3e152b091eed5958b9ca67d05de5960d747c8 data\basemod\loot_table\blocks\black_rock_slab.json
+e81962ed950e56558d732020f3c35ad158362725 data\basemod\loot_table\blocks\smooth_black_rock_stairs.json
 f31ed07154e9399c210d2b27a02706fea919814d data\basemod\loot_table\blocks\smooth_black_rock.json
 3bce520f28442507a60809d6c3c4330fba404e4a data\basemod\loot_table\blocks\example_block.json
 085554c2a5717e6543b3f285adfad8894e0f22e7 data\basemod\loot_table\blocks\black_rock_bricks.json
+58ff1d3801d3becf16ee431ddd5d39a94b837ec3 data\basemod\loot_table\blocks\black_rock_brick_stair.json
 cc42c155b4ec458eb17d4ef96be7582ec81cc544 data\basemod\loot_table\blocks\black_rock.json
 55493fbd4c433e83e2c0bb184b169e481caaf993 data\basemod\loot_table\blocks\example_fence_gate.json
+ea5cf0411650a3b32d3ee06994fc0eaa9d602815 data\basemod\loot_table\blocks\black_rock_brick_wall.json
 ed19ceef545b9fab7bc2cf5cc9108ca0b329fd5a data\basemod\loot_table\blocks\long_nose_block.json
 59b14328c35353ed5e467b0d878d4ef1053a5304 data\basemod\loot_table\blocks\example_wall.json

@@ -42,6 +42,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLACK_ROCK_SLAB);
                         entries.add(ModBlocks.BLACK_ROCK_WALL);
 
+                        entries.add(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
+                        entries.add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
+                        entries.add(ModBlocks.BLACK_ROCK_BRICK_WALL);
+
+                        entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
+                        entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
+                        entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+
                     }).build());
 
     public static void registerItemGroups(){

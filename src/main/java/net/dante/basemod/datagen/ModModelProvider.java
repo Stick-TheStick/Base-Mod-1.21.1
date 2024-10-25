@@ -20,8 +20,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LONG_NOSE_BLOCK);
 
         BlockStateModelGenerator.BlockTexturePool blackRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACK_ROCK_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SMOOTH_BLACK_ROCK);
+        BlockStateModelGenerator.BlockTexturePool blackRockBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool smoothBlackRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_BLACK_ROCK);
 
         examplePool.stairs(ModBlocks.EXAMPLE_STAIRS);
         examplePool.slab(ModBlocks.EXAMPLE_SLAB);
@@ -32,6 +32,14 @@ public class ModModelProvider extends FabricModelProvider {
         blackRockPool.stairs(ModBlocks.BLACK_ROCK_STAIRS);
         blackRockPool.slab(ModBlocks.BLACK_ROCK_SLAB);
         blackRockPool.wall(ModBlocks.BLACK_ROCK_WALL);
+
+        blackRockBricksPool.stairs(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
+        blackRockBricksPool.slab(ModBlocks.BLACK_ROCK_BRICK_SLAB);
+        blackRockBricksPool.wall(ModBlocks.BLACK_ROCK_BRICK_WALL);
+
+        smoothBlackRockPool.stairs(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
+        smoothBlackRockPool.slab(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
+        smoothBlackRockPool.wall(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
     }
 
     @Override
