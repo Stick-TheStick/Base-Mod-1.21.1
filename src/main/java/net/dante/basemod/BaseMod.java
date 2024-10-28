@@ -1,7 +1,6 @@
 package net.dante.basemod;
 
 import com.mojang.brigadier.CommandDispatcher;
-import com.mojang.brigadier.LiteralMessage;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.dante.basemod.block.ModBlocks;
 import net.dante.basemod.item.ModItemGroups;
@@ -12,27 +11,20 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.command.CommandSource;
 import net.minecraft.network.ClientConnection;
-import net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket;
-import net.minecraft.network.packet.c2s.play.ClientStatusC2SPacket;
 import net.minecraft.network.packet.s2c.common.DisconnectS2CPacket;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.PlayerManager;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.WorldSavePath;
-import net.minecraft.util.math.BlockPos;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
-import java.util.concurrent.TimeUnit;
+import java.util.Objects;
+
 import net.minecraft.text.Text;
 
 public class BaseMod implements ModInitializer {
@@ -43,25 +35,23 @@ public class BaseMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		ServerLifecycleEvents.SERVER_STARTED.register(this::getDataPack);
-		ModItemGroups.registerItemGroups();
 
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
 		// Register client tick event
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
-			// Check if the client is in a world and if a specific condition is met
+			// Check if the client is in a world and if kick condition is met
 			if (client.world != null && kickCondition) {
 				kickLocalPlayer();
 			}
 		});
-
 	}
 
 	private void getDataPack(MinecraftServer server) {
-		// Get the path to the save directory
+		// Get the path to the world save directory and path for the original datapack
 		Path saveDir = server.getSavePath(WorldSavePath.ROOT);
 		Path datapacksPath = saveDir.resolve("datapacks");
 
@@ -81,13 +71,9 @@ public class BaseMod implements ModInitializer {
 	}
 
 	private void DuplicateDataPack(Path requiredPath){
-		//Path sourceDirectoryName = Paths.get("Base-Mod-1.21.1");
-		Path targetDirectory = requiredPath;
+        Path sourceDirectory = Paths.get("").toAbsolutePath();
 
-		Path sourceDirectory = Paths.get("").toAbsolutePath();
-
-		// Traverse up to find the project root (assuming "src" is always in the project root)
-		while (!sourceDirectory.endsWith("Base-Mod-1.21.1")) { // Replace with your actual project folder name
+		while (!sourceDirectory.endsWith("Base-Mod-1.21.1")) {
 			sourceDirectory = sourceDirectory.getParent();
 			if (sourceDirectory == null) {
 				throw new IllegalStateException("Project root not found.");
@@ -100,33 +86,33 @@ public class BaseMod implements ModInitializer {
 
 		try {
 			Path finalSourceDirectory = sourceDirectory;
-			Files.walkFileTree(sourceDirectory, new SimpleFileVisitor<Path>() {
-				@Override
-				public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
-					Path targetDir = targetDirectory.resolve(finalSourceDirectory.relativize(dir));
-					Files.createDirectories(targetDir);
-					return FileVisitResult.CONTINUE;
-				}
+			Files.walkFileTree(sourceDirectory, new SimpleFileVisitor<>() {
+                @Override
+                public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+                    Path targetDir = requiredPath.resolve(finalSourceDirectory.relativize(dir));
+                    Files.createDirectories(targetDir);
+                    return FileVisitResult.CONTINUE;
+                }
 
-				@Override
-				public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-					Files.copy(file, targetDirectory.resolve(finalSourceDirectory.relativize(file)), StandardCopyOption.REPLACE_EXISTING);
-					System.out.println("The data pack was placed");
+                @Override
+                public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+                    Files.copy(file, requiredPath.resolve(finalSourceDirectory.relativize(file)), StandardCopyOption.REPLACE_EXISTING);
+                    System.out.println("The data pack was placed");
 
-					kickCondition = true;
+                    kickCondition = true;
 
-					executeCommand("datapack enable \"file/height_data_pack\"");
+                    executeCommand();
 
-					return FileVisitResult.CONTINUE;
-				}
-			});
+                    return FileVisitResult.CONTINUE;
+                }
+            });
 		} catch (IOException e) {
-			System.out.println("The data pack was failed to place");
+			System.out.println();
 			e.printStackTrace();
 		}
 	}
 
-	public void executeCommand(String command) {
+	public void executeCommand() {
 		MinecraftClient client = MinecraftClient.getInstance();
 		MinecraftServer server = client.getServer();
 
@@ -134,25 +120,19 @@ public class BaseMod implements ModInitializer {
 			CommandManager commandManager = server.getCommandManager();
 			ServerCommandSource commandSource = server.getCommandSource();
 
-			// Create a ParseResults object
 			CommandDispatcher<ServerCommandSource> dispatcher = commandManager.getDispatcher();
 			// Parse the command
-			//var parseResults = dispatcher.parse(command, commandSource);
-			var secondParseResults = dispatcher.parse("reload", commandSource);
-
+			var parseResults = dispatcher.parse("reload", commandSource);
 
 			// Now execute the parsed command
 			try {
-				//dispatcher.execute(parseResults);
-				dispatcher.execute(secondParseResults);
+				dispatcher.execute(parseResults);
 				System.out.println("executed");
 
             } catch (CommandSyntaxException e) {
                 throw new RuntimeException(e);
             }
-
         }
-
 	}
 
 	private void kickLocalPlayer() {
@@ -162,16 +142,16 @@ public class BaseMod implements ModInitializer {
 
 		// Create a message to display when the player is kicked
 		String kickMessage = "Rejoin the world for the increased build height to work";
-		client.player.sendMessage(Text.literal(kickMessage), true);
+
+        assert client.player != null;
+        client.player.sendMessage(Text.literal(kickMessage), true);
 
 		// Get the client connection
-		ClientConnection connection = client.getNetworkHandler().getConnection();
+		ClientConnection connection = Objects.requireNonNull(client.getNetworkHandler()).getConnection();
 
 		// Disconnect the local player using the Disconnect packet
 		connection.send(new DisconnectS2CPacket(Text.literal(kickMessage)));
 		connection.disconnect(Text.literal(kickMessage));
-
-
 	}
 
 }
