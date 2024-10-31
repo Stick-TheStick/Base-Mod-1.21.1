@@ -1,5 +1,5 @@
-[22:12:56] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.5
-[22:12:56] [main/INFO] (FabricLoader) Loading 43 mods:
+[23:01:14] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.5
+[23:01:15] [main/INFO] (FabricLoader) Loading 43 mods:
 	- basemod 1.0.0
 	- fabric-api 0.104.0+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c19
@@ -43,22 +43,39 @@
 	- java 21
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
-[22:12:57] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/konko_t1pm617/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/51ee0a44ab05f6fddd66b09e66b3a16904f9c55d/sponge-mixin-0.15.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[22:12:57] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[22:12:57] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[22:12:57] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[22:12:57] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[22:13:04] [main/INFO] (basemod) Registering Item Groups for basemod
-[22:13:04] [main/INFO] (basemod) Registering Mod Items forbasemod
-[22:13:04] [main/INFO] (basemod) Registering Blocks forbasemod
-[22:13:05] [main/INFO] (FabricDataGenHelper) Running data generator for basemod
-[22:13:05] [main/INFO] (Minecraft) Starting provider: Base Mod/Tags for minecraft:block
-[22:13:05] [main/INFO] (Minecraft) Base Mod/Tags for minecraft:block finished after 16 ms
-[22:13:05] [main/INFO] (Minecraft) Starting provider: Base Mod/Tags for minecraft:item
-[22:13:05] [main/INFO] (Minecraft) Base Mod/Tags for minecraft:item finished after 0 ms
-[22:13:05] [main/INFO] (Minecraft) Starting provider: Base Mod/Block Loot Tables
-[22:13:05] [main/INFO] (Minecraft) Base Mod/Block Loot Tables finished after 16 ms
-[22:13:05] [main/INFO] (Minecraft) Starting provider: Base Mod/Model Definitions
-[22:13:05] [main/INFO] (Minecraft) Base Mod/Model Definitions finished after 56 ms
-[22:13:05] [main/INFO] (Minecraft) All providers took: 91 ms
-[22:13:05] [main/INFO] (Minecraft) Caching: total files: 111, old count: 111, new count: 112, removed stale: 0, written: 0
+[23:01:15] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/samue/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/51ee0a44ab05f6fddd66b09e66b3a16904f9c55d/sponge-mixin-0.15.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[23:01:15] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[23:01:15] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[23:01:15] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[23:01:16] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[23:01:24] [main/ERROR] (Minecraft) Failed to start the minecraft server
+java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'basemod' at 'net.dante.basemod.BaseMod'!
+	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$2(FabricLoaderImpl.java:403) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:401) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.Hooks.startServer(Hooks.java:63) ~[fabric-loader-0.16.5.jar:?]
+	at net.minecraft.server.Main.main(Main.java:107) [minecraft-merged-c2b31d572c-1.21.1-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) [fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23) [fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+Caused by: net.fabricmc.loader.api.EntrypointException: Exception while loading entries for entrypoint 'main' provided by 'basemod'
+	at net.fabricmc.loader.impl.entrypoint.EntrypointContainerImpl.getEntrypoint(EntrypointContainerImpl.java:56) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:399) ~[fabric-loader-0.16.5.jar:?]
+	... 6 more
+Caused by: java.lang.RuntimeException: Cannot load class net.minecraft.server.integrated.IntegratedServer in environment type SERVER
+	at net.fabricmc.loader.impl.transformer.FabricTransformer.transform(FabricTransformer.java:59) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPreMixinClassByteArray(KnotClassDelegate.java:462) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:415) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.16.5.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at net.fabricmc.loader.impl.util.DefaultLanguageAdapter.create(DefaultLanguageAdapter.java:50) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.entrypoint.EntrypointStorage$NewEntry.getOrCreate(EntrypointStorage.java:124) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.entrypoint.EntrypointContainerImpl.getEntrypoint(EntrypointContainerImpl.java:53) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:399) ~[fabric-loader-0.16.5.jar:?]
+	... 6 more

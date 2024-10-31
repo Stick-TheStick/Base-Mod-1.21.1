@@ -68,6 +68,11 @@ public class ModBlocks {
     public static final Block SMOOTH_BLACK_ROCK_SLAB = registerBlock("smooth_black_rock_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
+    public static final Block AMETHYST_GRASS_BLOCK = registerBlock("amethyst_grass_block",
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .sounds(BlockSoundGroup.GRASS)));
+
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(BaseMod.MOD_ID, name), block);
@@ -97,6 +102,8 @@ public class ModBlocks {
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
+
+            entries.add(ModBlocks.AMETHYST_GRASS_BLOCK);
         });
     }
 }

@@ -40,6 +40,8 @@ public class ModModelProvider extends FabricModelProvider {
         smoothBlackRockPool.stairs(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
         smoothBlackRockPool.slab(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
         smoothBlackRockPool.wall(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_GRASS_BLOCK);
     }
 
     @Override
