@@ -2,24 +2,18 @@
   "item.basemod.example_item": "Example Item",
 
   "block.basemod.example_block": "Example Block",
-
   "block.basemod.long_nose_block": "Long Nose Block",
-
   "block.basemod.example_stairs": "Example Stairs",
   "block.basemod.example_slab": "Example Slab",
-
   "block.basemod.example_fence": "Example Fence",
   "block.basemod.example_fence_gate": "Example Fence Gate",
   "block.basemod.example_wall": "Example Wall",
-
   "block.basemod.black_rock_bricks": "Black Rock Bricks",
   "block.basemod.black_rock": "Black Rock",
   "block.basemod.smooth_black_rock": "Smooth Black Rock",
-
   "block.basemod.black_rock_stairs": "Black Rock Stairs",
   "block.basemod.black_rock_slab": "Black Rock Slab",
   "block.basemod.black_rock_wall": "Black Rock Wall",
-
 
 
   "itemgroup.basemod.example_things": "Example Things",
