@@ -54,6 +54,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
         addDrop(ModBlocks.AMETHYST_GRASS_BLOCK);
+        addDrop(ModBlocks.AMETHYST_LEAVES);
     }
 
 

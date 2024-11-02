@@ -1,5 +1,5 @@
-[23:01:14] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.5
-[23:01:15] [main/INFO] (FabricLoader) Loading 43 mods:
+[09:23:56] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.5
+[09:23:56] [main/INFO] (FabricLoader) Loading 43 mods:
 	- basemod 1.0.0
 	- fabric-api 0.104.0+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c19
@@ -43,12 +43,12 @@
 	- java 21
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
-[23:01:15] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/samue/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/51ee0a44ab05f6fddd66b09e66b3a16904f9c55d/sponge-mixin-0.15.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[23:01:15] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[23:01:15] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[23:01:15] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[23:01:16] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[23:01:24] [main/ERROR] (Minecraft) Failed to start the minecraft server
+[09:23:56] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/samue/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/51ee0a44ab05f6fddd66b09e66b3a16904f9c55d/sponge-mixin-0.15.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[09:23:56] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[09:23:56] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[09:23:56] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[09:23:57] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[09:24:07] [main/ERROR] (Minecraft) Failed to start the minecraft server
 java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'basemod' at 'net.dante.basemod.BaseMod'!
 	at net.fabricmc.loader.impl.FabricLoaderImpl.lambda$invokeEntrypoints$2(FabricLoaderImpl.java:403) ~[fabric-loader-0.16.5.jar:?]
 	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33) ~[fabric-loader-0.16.5.jar:?]

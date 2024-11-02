@@ -69,9 +69,11 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     public static final Block AMETHYST_GRASS_BLOCK = registerBlock("amethyst_grass_block",
-            new Block(AbstractBlock.Settings.create().strength(1f)
+            new GrassBlock(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.GRASS)));
-
+    public static final Block AMETHYST_LEAVES = registerBlock("amethyst_leaves",
+            new LeavesBlock(AbstractBlock.Settings.create().strength(1f)
+                    .sounds(BlockSoundGroup.CHERRY_LEAVES)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -104,6 +106,7 @@ public class ModBlocks {
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
 
             entries.add(ModBlocks.AMETHYST_GRASS_BLOCK);
+            entries.add(ModBlocks.AMETHYST_LEAVES);
         });
     }
 }
