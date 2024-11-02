@@ -104,7 +104,6 @@ public class ModBlocks {
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
-
             entries.add(ModBlocks.AMETHYST_GRASS_BLOCK);
             entries.add(ModBlocks.AMETHYST_LEAVES);
         });

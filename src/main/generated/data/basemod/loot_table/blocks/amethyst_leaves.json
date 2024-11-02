@@ -12,6 +12,7 @@
         {
           "type": "minecraft:item",
           "name": "basemod:amethyst_leaves"
+
         }
       ],
       "rolls": 1.0

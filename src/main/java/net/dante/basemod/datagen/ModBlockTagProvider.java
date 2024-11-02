@@ -49,6 +49,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL)
                 .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.AMETHYST_LEAVES);
+
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.EXAMPLE_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.EXAMPLE_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.EXAMPLE_WALL);
@@ -58,7 +61,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
         getOrCreateTagBuilder(BlockTags.DIRT).add(ModBlocks.AMETHYST_GRASS_BLOCK);
-        getOrCreateTagBuilder(BlockTags.LEAVES).add(ModBlocks.AMETHYST_LEAVES);
     }
 
 }
