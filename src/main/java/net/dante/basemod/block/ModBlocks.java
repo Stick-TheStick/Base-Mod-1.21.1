@@ -37,6 +37,9 @@ public class ModBlocks {
     public static final Block BLACK_ROCK_BRICKS = registerBlock("black_rock_bricks",
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+    public static final Block GILDED_QUARTZ_BRICKS = registerBlock("gilded_quartz_bricks",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
+                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
     public static final Block BLACK_ROCK = registerBlock("black_rock",
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)));
@@ -106,6 +109,7 @@ public class ModBlocks {
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
             entries.add(ModBlocks.AMETHYST_GRASS_BLOCK);
             entries.add(ModBlocks.AMETHYST_LEAVES);
+            entries.add(ModBlocks.GILDED_QUARTZ_BRICKS);
         });
     }
 }

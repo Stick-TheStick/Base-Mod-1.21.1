@@ -19,7 +19,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLACK_ROCK_BRICKS)
                 .add(ModBlocks.BLACK_ROCK)
                 .add(ModBlocks.SMOOTH_BLACK_ROCK)
-
+                .add(ModBlocks.GILDED_QUARTZ_BRICKS)
                 .add(ModBlocks.BLACK_ROCK_SLAB)
                 .add(ModBlocks.BLACK_ROCK_STAIRS)
                 .add(ModBlocks.BLACK_ROCK_WALL)

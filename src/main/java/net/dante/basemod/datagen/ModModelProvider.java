@@ -44,6 +44,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_GRASS_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GILDED_QUARTZ_BRICKS);
     }
 
     @Override
