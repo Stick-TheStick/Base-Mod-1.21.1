@@ -13,27 +13,13 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
+    // Full Blocks
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block",
             new Block(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.DEEPSLATE)));
-
-    public static final Block EXAMPLE_STAIRS = registerBlock("example_stairs",
-            new StairsBlock(ModBlocks.EXAMPLE_BLOCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
-    public static final Block EXAMPLE_SLAB = registerBlock("example_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
-
-    public static final Block EXAMPLE_FENCE = registerBlock("example_fence",
-            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
-    public static final Block EXAMPLE_FENCE_GATE = registerBlock("example_fence_gate",
-            new FenceGateBlock(WoodType.DARK_OAK,AbstractBlock.Settings.create().strength(2f).requiresTool()));
-    public static final Block EXAMPLE_WALL = registerBlock("example_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
-
     public static final Block LONG_NOSE_BLOCK = registerBlock("long_nose_block",
-            new Block(AbstractBlock.Settings.create().strength(1f).
-                    sounds(BlockSoundGroup.CANDLE)));
-
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .sounds(BlockSoundGroup.CANDLE)));
     public static final Block BLACK_ROCK_BRICKS = registerBlock("black_rock_bricks",
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
@@ -46,37 +32,60 @@ public class ModBlocks {
     public static final Block SMOOTH_BLACK_ROCK = registerBlock("smooth_black_rock",
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
                     .sounds(BlockSoundGroup.DEEPSLATE)));
-
-    public static final Block BLACK_ROCK_STAIRS = registerBlock("black_rock_stairs",
-            new StairsBlock(ModBlocks.BLACK_ROCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block BLACK_ROCK_WALL = registerBlock("black_rock_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block BLACK_ROCK_SLAB = registerBlock("black_rock_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-
-    public static final Block BLACK_ROCK_BRICK_STAIRS = registerBlock("black_rock_brick_stair",
-            new StairsBlock(ModBlocks.BLACK_ROCK_BRICKS.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block BLACK_ROCK_BRICK_WALL = registerBlock("black_rock_brick_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block BLACK_ROCK_BRICK_SLAB = registerBlock("black_rock_brick_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-
-    public static final Block SMOOTH_BLACK_ROCK_STAIRS = registerBlock("smooth_black_rock_stairs",
-            new StairsBlock(ModBlocks.SMOOTH_BLACK_ROCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block SMOOTH_BLACK_ROCK_WALL = registerBlock("smooth_black_rock_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block SMOOTH_BLACK_ROCK_SLAB = registerBlock("smooth_black_rock_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-
     public static final Block AMETHYST_GRASS_BLOCK = registerBlock("amethyst_grass_block",
             new GrassBlock(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.GRASS)));
     public static final Block AMETHYST_LEAVES = registerBlock("amethyst_leaves",
             new LeavesBlock(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.CHERRY_LEAVES)));
+    public static final Block AMETHYST_LOG = registerBlock("amethyst_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1f)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    // Stairs
+    public static final Block EXAMPLE_STAIRS = registerBlock("example_stairs",
+            new StairsBlock(ModBlocks.EXAMPLE_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block BLACK_ROCK_STAIRS = registerBlock("black_rock_stairs",
+            new StairsBlock(ModBlocks.BLACK_ROCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block BLACK_ROCK_BRICK_STAIRS = registerBlock("black_rock_brick_stair",
+            new StairsBlock(ModBlocks.BLACK_ROCK_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block SMOOTH_BLACK_ROCK_STAIRS = registerBlock("smooth_black_rock_stairs",
+            new StairsBlock(ModBlocks.SMOOTH_BLACK_ROCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block GILDED_QUARTZ_BRICK_STAIRS = registerBlock("gilded_quartz_brick_stairs",
+            new StairsBlock(ModBlocks.GILDED_QUARTZ_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
+    // Slabs
+    public static final Block EXAMPLE_SLAB = registerBlock("example_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block BLACK_ROCK_SLAB = registerBlock("black_rock_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block BLACK_ROCK_BRICK_SLAB = registerBlock("black_rock_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block SMOOTH_BLACK_ROCK_SLAB = registerBlock("smooth_black_rock_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
+    // Walls
+    public static final Block EXAMPLE_WALL = registerBlock("example_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block BLACK_ROCK_WALL = registerBlock("black_rock_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block BLACK_ROCK_BRICK_WALL = registerBlock("black_rock_brick_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block SMOOTH_BLACK_ROCK_WALL = registerBlock("smooth_black_rock_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
+    // Fences and Gates
+    public static final Block EXAMPLE_FENCE = registerBlock("example_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block EXAMPLE_FENCE_GATE = registerBlock("example_fence_gate",
+            new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -93,23 +102,33 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
 
+            // Full Blocks
             entries.add(ModBlocks.EXAMPLE_BLOCK);
             entries.add(ModBlocks.LONG_NOSE_BLOCK);
             entries.add(ModBlocks.BLACK_ROCK_BRICKS);
             entries.add(ModBlocks.BLACK_ROCK);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK);
-            entries.add(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
-            entries.add(ModBlocks.BLACK_ROCK_BRICK_WALL);
-            entries.add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
-            entries.add(ModBlocks.BLACK_ROCK_STAIRS);
-            entries.add(ModBlocks.BLACK_ROCK_SLAB);
-            entries.add(ModBlocks.BLACK_ROCK_WALL);
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
             entries.add(ModBlocks.AMETHYST_GRASS_BLOCK);
             entries.add(ModBlocks.AMETHYST_LEAVES);
             entries.add(ModBlocks.GILDED_QUARTZ_BRICKS);
+            entries.add(ModBlocks.AMETHYST_LOG);
+
+// Stairs
+            entries.add(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
+            entries.add(ModBlocks.BLACK_ROCK_STAIRS);
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
+            entries.add(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
+
+// Slabs
+            entries.add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
+            entries.add(ModBlocks.BLACK_ROCK_SLAB);
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
+
+// Walls
+            entries.add(ModBlocks.BLACK_ROCK_BRICK_WALL);
+            entries.add(ModBlocks.BLACK_ROCK_WALL);
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+
         });
     }
 }

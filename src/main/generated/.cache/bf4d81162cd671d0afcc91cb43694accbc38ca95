@@ -1,8 +1,8 @@
-// 1.21.1	2024-11-02T22:08:55.119053	Base Mod/Tags for minecraft:block
-5e769b17333b46d0e3f5912b5c2f1c48963ceb8d data\minecraft\tags\block\mineable\pickaxe.json
-df2a95543479c527bb995cf1fad08022c3180a54 data\minecraft\tags\block\needs_iron_tool.json
+// 1.21.1	2024-11-03T22:57:02.8814105	Base Mod/Tags for minecraft:block
+6629393887145b20eeb68766548603446809e939 data\minecraft\tags\block\mineable\pickaxe.json
+57b072f85d73c077d3d07067fcb1c435e9ba6189 data\minecraft\tags\block\needs_iron_tool.json
 6cc86a756e36feda8ea252b083e831e0a6124c64 data\minecraft\tags\block\walls.json
 3a50dcc79c79558abeb12319745acf103fe39204 data\minecraft\tags\block\fence_gates.json
-2492bc7e3825d63e507354c9813a8d19e16910e3 data\minecraft\tags\block\dirt.json
+4537520b4cebc91ec39a37346f8a6539d7fb9aed data\minecraft\tags\block\dirt.json
 6fe28d917071674f5d14ee7660d09f197baec461 data\minecraft\tags\block\leaves.json
 da4fc4c25e5251ab4aafa53ee7a3356ee5abcb34 data\minecraft\tags\block\fences.json

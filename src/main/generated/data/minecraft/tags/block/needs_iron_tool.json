@@ -3,14 +3,13 @@
     "basemod:black_rock_bricks",
     "basemod:black_rock",
     "basemod:smooth_black_rock",
-    "basemod:black_rock_slab",
-    "basemod:black_rock_stairs",
-    "basemod:black_rock_wall",
+    "basemod:gilded_quartz_brick_stairs",
     "basemod:black_rock_brick_stair",
-    "basemod:black_rock_brick_wall",
-    "basemod:black_rock_brick_slab",
     "basemod:smooth_black_rock_stairs",
-    "basemod:smooth_black_rock_wall",
+    "basemod:black_rock_slab",
+    "basemod:black_rock_brick_slab",
+    "basemod:black_rock_wall",
+    "basemod:black_rock_brick_wall",
     "basemod:smooth_black_rock_wall"
   ]
 }

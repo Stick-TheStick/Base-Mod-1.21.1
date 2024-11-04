@@ -1,21 +1,35 @@
 {
-  "item.basemod.example_item": "Example Item",
-
   "block.basemod.example_block": "Example Block",
   "block.basemod.long_nose_block": "Long Nose Block",
-  "block.basemod.example_stairs": "Example Stairs",
-  "block.basemod.example_slab": "Example Slab",
-  "block.basemod.example_fence": "Example Fence",
-  "block.basemod.example_fence_gate": "Example Fence Gate",
-  "block.basemod.example_wall": "Example Wall",
   "block.basemod.black_rock_bricks": "Black Rock Bricks",
   "block.basemod.black_rock": "Black Rock",
   "block.basemod.smooth_black_rock": "Smooth Black Rock",
+  "block.basemod.amethyst_grass_block": "Amethyst Grass",
+  "block.basemod.amethyst_log": "Amethyst Log",
+  "block.basemod.amethyst_leaves": "Amethyst Leaves",
+  "block.basemod.gilded_quartz_bricks": "Gilded Quartz Bricks",
+
+
+  "block.basemod.example_stairs": "Example Stairs",
   "block.basemod.black_rock_stairs": "Black Rock Stairs",
+  "block.basemod.black_rock_brick_stair": "Black Rock Brick Stairs",
+  "block.basemod.smooth_black_rock_stairs": "Smooth Black Rock Stairs",
+  "block.basemod.gilded_quartz_brick_stairs": "Gilded Quartz Brick Stairs",
+
+
+  "block.basemod.example_slab": "Example Slab",
   "block.basemod.black_rock_slab": "Black Rock Slab",
+  "block.basemod.black_rock_brick_slab": "Black Rock Brick Slab",
+  "block.basemod.smooth_black_rock_slab": "Smooth Black Rock Slab",
+
+
+  "block.basemod.example_wall": "Example Wall",
   "block.basemod.black_rock_wall": "Black Rock Wall",
+  "block.basemod.black_rock_brick_wall": "Black Rock Brick Wall",
+  "block.basemod.smooth_black_rock_wall": "Smooth Black Rock Wall",
 
 
-  "itemgroup.basemod.example_things": "Example Things",
-  "itemgroup.basemod.base_mod_blocks": "Base Mod Blocks"
+  "block.basemod.example_fence": "Example Fence",
+  "block.basemod.example_fence_gate": "Example Fence Gate"
+
 }

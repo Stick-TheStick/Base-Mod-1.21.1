@@ -20,8 +20,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LONG_NOSE_BLOCK);
 
         BlockStateModelGenerator.BlockTexturePool blackRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK);
+        BlockStateModelGenerator.BlockTexturePool gildedquartzPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GILDED_QUARTZ_BRICKS);
         BlockStateModelGenerator.BlockTexturePool blackRockBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK_BRICKS);
         BlockStateModelGenerator.BlockTexturePool smoothBlackRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_BLACK_ROCK);
+
+        //example pool
 
         examplePool.stairs(ModBlocks.EXAMPLE_STAIRS);
         examplePool.slab(ModBlocks.EXAMPLE_SLAB);
@@ -29,22 +32,32 @@ public class ModModelProvider extends FabricModelProvider {
         examplePool.fenceGate(ModBlocks.EXAMPLE_FENCE_GATE);
         examplePool.wall(ModBlocks.EXAMPLE_WALL);
 
+        //Black Rock Pool
+
         blackRockPool.stairs(ModBlocks.BLACK_ROCK_STAIRS);
         blackRockPool.slab(ModBlocks.BLACK_ROCK_SLAB);
         blackRockPool.wall(ModBlocks.BLACK_ROCK_WALL);
+
+        //Black Rock Brick Pool
 
         blackRockBricksPool.stairs(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
         blackRockBricksPool.slab(ModBlocks.BLACK_ROCK_BRICK_SLAB);
         blackRockBricksPool.wall(ModBlocks.BLACK_ROCK_BRICK_WALL);
 
+        //Smooth Black Rock Pool
+
         smoothBlackRockPool.stairs(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
         smoothBlackRockPool.slab(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
         smoothBlackRockPool.wall(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_GRASS_BLOCK);
+        //Gilded Quartz Pool
 
+        gildedquartzPool.stairs(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_GRASS_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_LOG);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_LEAVES);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GILDED_QUARTZ_BRICKS);
+
     }
 
     @Override

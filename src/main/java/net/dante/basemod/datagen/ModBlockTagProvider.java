@@ -15,52 +15,72 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 //Used for making new properties for blocks
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        // Full Blocks
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.BLACK_ROCK_BRICKS)
                 .add(ModBlocks.BLACK_ROCK)
                 .add(ModBlocks.SMOOTH_BLACK_ROCK)
                 .add(ModBlocks.GILDED_QUARTZ_BRICKS)
-                .add(ModBlocks.BLACK_ROCK_SLAB)
-                .add(ModBlocks.BLACK_ROCK_STAIRS)
-                .add(ModBlocks.BLACK_ROCK_WALL)
-
-                .add(ModBlocks.BLACK_ROCK_BRICK_STAIRS)
-                .add(ModBlocks.BLACK_ROCK_BRICK_WALL)
-                .add(ModBlocks.BLACK_ROCK_BRICK_SLAB)
-
-                .add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS)
-                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL)
-                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+                .add(ModBlocks.AMETHYST_LOG);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLACK_ROCK_BRICKS)
                 .add(ModBlocks.BLACK_ROCK)
-                .add(ModBlocks.SMOOTH_BLACK_ROCK)
+                .add(ModBlocks.SMOOTH_BLACK_ROCK);
 
-                .add(ModBlocks.BLACK_ROCK_SLAB)
-                .add(ModBlocks.BLACK_ROCK_STAIRS)
-                .add(ModBlocks.BLACK_ROCK_WALL)
+        getOrCreateTagBuilder(BlockTags.DIRT)
+                .add(ModBlocks.AMETHYST_GRASS_BLOCK);
 
-                .add(ModBlocks.BLACK_ROCK_BRICK_STAIRS)
-                .add(ModBlocks.BLACK_ROCK_BRICK_WALL)
-                .add(ModBlocks.BLACK_ROCK_BRICK_SLAB)
-
-                .add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS)
-                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL)
-                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
-
+        getOrCreateTagBuilder(BlockTags.LOGS)
+                .add(ModBlocks.AMETHYST_LOG);
+        //Supposed to be leaves
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(ModBlocks.AMETHYST_LEAVES);
 
-        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.EXAMPLE_FENCE);
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.EXAMPLE_FENCE_GATE);
-        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.EXAMPLE_WALL);
+// Stairs
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.BLACK_ROCK_STAIRS)
+                .add(ModBlocks.BLACK_ROCK_BRICK_STAIRS)
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
 
-        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.BLACK_ROCK_WALL);
-        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.BLACK_ROCK_BRICK_WALL);
-        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS)
+                .add(ModBlocks.BLACK_ROCK_BRICK_STAIRS)
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
 
-        getOrCreateTagBuilder(BlockTags.DIRT).add(ModBlocks.AMETHYST_GRASS_BLOCK);
+// Slabs
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.BLACK_ROCK_SLAB)
+                .add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.BLACK_ROCK_SLAB)
+                .add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
+
+// Walls
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.BLACK_ROCK_WALL)
+                .add(ModBlocks.BLACK_ROCK_BRICK_WALL)
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.BLACK_ROCK_WALL)
+                .add(ModBlocks.BLACK_ROCK_BRICK_WALL)
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.EXAMPLE_WALL)
+                .add(ModBlocks.BLACK_ROCK_WALL)
+                .add(ModBlocks.BLACK_ROCK_BRICK_WALL)
+                .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+
+// Fences and Gates
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.EXAMPLE_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.EXAMPLE_FENCE_GATE);
+
     }
 
 }
