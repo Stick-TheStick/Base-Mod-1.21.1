@@ -22,7 +22,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLACK_ROCK)
                 .add(ModBlocks.SMOOTH_BLACK_ROCK)
                 .add(ModBlocks.GILDED_QUARTZ_BRICKS)
-                .add(ModBlocks.AMETHYST_LOG);
+                .add(ModBlocks.AMETHYST_LOG)
+                .add(ModBlocks.AMETHYST_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLACK_ROCK_BRICKS)

@@ -8,7 +8,6 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 

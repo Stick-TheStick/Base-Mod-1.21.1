@@ -41,6 +41,9 @@ public class ModBlocks {
     public static final Block AMETHYST_LOG = registerBlock("amethyst_log",
             new PillarBlock(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.WOOD)));
+    public static final Block AMETHYST_PLANKS = registerBlock("amethyst_planks",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
+                    .sounds(BlockSoundGroup.WOOD)));
 
     // Stairs
     public static final Block EXAMPLE_STAIRS = registerBlock("example_stairs",
@@ -112,6 +115,7 @@ public class ModBlocks {
             entries.add(ModBlocks.AMETHYST_LEAVES);
             entries.add(ModBlocks.GILDED_QUARTZ_BRICKS);
             entries.add(ModBlocks.AMETHYST_LOG);
+            entries.add(ModBlocks.AMETHYST_PLANKS);
 
 // Stairs
             entries.add(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
