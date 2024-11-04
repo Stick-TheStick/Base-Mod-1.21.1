@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/leaves",
   "textures": {
-    "all": "basemod:block/amethyst_leaves"
+    "all": "block/amethyst_leaves"
   }
 }

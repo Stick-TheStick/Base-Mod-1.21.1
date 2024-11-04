@@ -15,7 +15,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 //Used for making new properties for blocks
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        // Full Blocks
+
+// Full Blocks
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.BLACK_ROCK_BRICKS)
                 .add(ModBlocks.BLACK_ROCK)
@@ -31,8 +32,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.DIRT)
                 .add(ModBlocks.AMETHYST_GRASS_BLOCK);
 
-        getOrCreateTagBuilder(BlockTags.LOGS)
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.AMETHYST_LOG);
+
         //Supposed to be leaves
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(ModBlocks.AMETHYST_LEAVES);
@@ -80,7 +82,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.EXAMPLE_FENCE_GATE);
-
     }
 
 }

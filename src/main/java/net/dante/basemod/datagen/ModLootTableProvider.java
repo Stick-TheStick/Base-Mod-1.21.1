@@ -59,7 +59,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 // Fences and Gates
         addDrop(ModBlocks.EXAMPLE_FENCE);
         addDrop(ModBlocks.EXAMPLE_FENCE_GATE);
-
     }
 
 

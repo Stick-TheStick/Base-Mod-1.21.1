@@ -102,7 +102,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
 
-            // Full Blocks
+// Full Blocks
             entries.add(ModBlocks.EXAMPLE_BLOCK);
             entries.add(ModBlocks.LONG_NOSE_BLOCK);
             entries.add(ModBlocks.BLACK_ROCK_BRICKS);
