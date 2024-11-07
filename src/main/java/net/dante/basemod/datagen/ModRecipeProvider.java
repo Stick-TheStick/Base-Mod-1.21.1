@@ -18,10 +18,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        List<ItemConvertible> EXAMPLE_ITEM_SMELTABLES = List.of(ModItems.EXAMPLE_ITEM, ModBlocks.EXAMPLE_BLOCK,
+        /*List<ItemConvertible> EXAMPLE_ITEM_SMELTABLES = List.of(ModItems.EXAMPLE_ITEM, ModBlocks.EXAMPLE_BLOCK,
                 ModBlocks.EXAMPLE_BLOCK);
 
-        offerSmelting(exporter, EXAMPLE_ITEM_SMELTABLES, RecipeCategory.MISC, ModItems.EXAMPLE_ITEM, .25f, 200, "example_item");
+        offerSmelting(exporter, EXAMPLE_ITEM_SMELTABLES, RecipeCategory.MISC, ModItems.EXAMPLE_ITEM, .25f, 200, "example_item");*/
 
     }
 }

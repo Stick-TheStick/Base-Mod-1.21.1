@@ -31,6 +31,8 @@
 
 
   "block.basemod.example_fence": "Example Fence",
-  "block.basemod.example_fence_gate": "Example Fence Gate"
+  "block.basemod.example_fence_gate": "Example Fence Gate",
+
+  "itemgroup.basemod.base_mod_blocks": "Blocks Galore "
 
 }

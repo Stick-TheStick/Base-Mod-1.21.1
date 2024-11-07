@@ -72,17 +72,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(ModBlocks.EXAMPLE_WALL)
+                //.add(ModBlocks.EXAMPLE_WALL)
                 .add(ModBlocks.BLACK_ROCK_WALL)
                 .add(ModBlocks.BLACK_ROCK_BRICK_WALL)
                 .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
 // Fences and Gates
-        getOrCreateTagBuilder(BlockTags.FENCES)
-                .add(ModBlocks.EXAMPLE_FENCE);
+        //getOrCreateTagBuilder(BlockTags.FENCES)
+                //.add(ModBlocks.EXAMPLE_FENCE);
 
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(ModBlocks.EXAMPLE_FENCE_GATE);
+        //getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                //.add(ModBlocks.EXAMPLE_FENCE_GATE);
     }
 
 }

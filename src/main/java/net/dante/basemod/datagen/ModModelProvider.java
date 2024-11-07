@@ -15,7 +15,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        BlockStateModelGenerator.BlockTexturePool examplePool =  blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EXAMPLE_BLOCK);
+        //BlockStateModelGenerator.BlockTexturePool examplePool =  blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EXAMPLE_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LONG_NOSE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_PLANKS);
@@ -27,11 +27,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         //example pool
 
-        examplePool.stairs(ModBlocks.EXAMPLE_STAIRS);
-        examplePool.slab(ModBlocks.EXAMPLE_SLAB);
-        examplePool.fence(ModBlocks.EXAMPLE_FENCE);
-        examplePool.fenceGate(ModBlocks.EXAMPLE_FENCE_GATE);
-        examplePool.wall(ModBlocks.EXAMPLE_WALL);
+        //examplePool.stairs(ModBlocks.EXAMPLE_STAIRS);
+        //examplePool.slab(ModBlocks.EXAMPLE_SLAB);
+        //examplePool.fence(ModBlocks.EXAMPLE_FENCE);
+        //examplePool.fenceGate(ModBlocks.EXAMPLE_FENCE_GATE);
+        //examplePool.wall(ModBlocks.EXAMPLE_WALL);
 
         //Black Rock Pool
 
@@ -62,6 +62,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.EXAMPLE_ITEM, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.EXAMPLE_ITEM, Models.GENERATED);
     }
 }

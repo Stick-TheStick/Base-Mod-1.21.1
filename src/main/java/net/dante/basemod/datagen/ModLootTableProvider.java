@@ -16,7 +16,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
 // Full Blocks
-        addDrop(ModBlocks.EXAMPLE_BLOCK);
+        //addDrop(ModBlocks.EXAMPLE_BLOCK);
         addDrop(ModBlocks.LONG_NOSE_BLOCK);
         addDrop(ModBlocks.BLACK_ROCK_BRICKS);
         addDrop(ModBlocks.BLACK_ROCK);
@@ -27,27 +27,27 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GILDED_QUARTZ_BRICKS);
 
 // Stairs
-        addDrop(ModBlocks.EXAMPLE_STAIRS);
+        //addDrop(ModBlocks.EXAMPLE_STAIRS);
         addDrop(ModBlocks.BLACK_ROCK_STAIRS);
         addDrop(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
         addDrop(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
         addDrop(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
 
 // Slabs
-        addDrop(ModBlocks.EXAMPLE_SLAB, slabDrops(ModBlocks.EXAMPLE_SLAB));
+        //addDrop(ModBlocks.EXAMPLE_SLAB, slabDrops(ModBlocks.EXAMPLE_SLAB));
         addDrop(ModBlocks.BLACK_ROCK_SLAB, slabDrops(ModBlocks.BLACK_ROCK_SLAB));
         addDrop(ModBlocks.BLACK_ROCK_BRICK_SLAB, slabDrops(ModBlocks.BLACK_ROCK_BRICK_SLAB));
         addDrop(ModBlocks.SMOOTH_BLACK_ROCK_SLAB, slabDrops(ModBlocks.SMOOTH_BLACK_ROCK_SLAB));
 
 // Walls
-        addDrop(ModBlocks.EXAMPLE_WALL);
+        //addDrop(ModBlocks.EXAMPLE_WALL);
         addDrop(ModBlocks.BLACK_ROCK_WALL);
         addDrop(ModBlocks.BLACK_ROCK_BRICK_WALL);
         addDrop(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
 // Fences and Gates
-        addDrop(ModBlocks.EXAMPLE_FENCE);
-        addDrop(ModBlocks.EXAMPLE_FENCE_GATE);
+        //addDrop(ModBlocks.EXAMPLE_FENCE);
+        //addDrop(ModBlocks.EXAMPLE_FENCE_GATE);
     }
 
 

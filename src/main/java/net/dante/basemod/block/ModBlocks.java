@@ -14,9 +14,9 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     // Full Blocks
-    public static final Block EXAMPLE_BLOCK = registerBlock("example_block",
+    /*public static final Block EXAMPLE_BLOCK = registerBlock("example_block",
             new Block(AbstractBlock.Settings.create().strength(1f)
-                    .sounds(BlockSoundGroup.DEEPSLATE)));
+                    .sounds(BlockSoundGroup.DEEPSLATE)));*/
     public static final Block LONG_NOSE_BLOCK = registerBlock("long_nose_block",
             new Block(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.CANDLE)));
@@ -46,9 +46,9 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WOOD)));
 
     // Stairs
-    public static final Block EXAMPLE_STAIRS = registerBlock("example_stairs",
+    /*public static final Block EXAMPLE_STAIRS = registerBlock("example_stairs",
             new StairsBlock(ModBlocks.EXAMPLE_BLOCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
     public static final Block BLACK_ROCK_STAIRS = registerBlock("black_rock_stairs",
             new StairsBlock(ModBlocks.BLACK_ROCK.getDefaultState(),
                     AbstractBlock.Settings.create().strength(1f).requiresTool()));
@@ -63,8 +63,8 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     // Slabs
-    public static final Block EXAMPLE_SLAB = registerBlock("example_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    /*public static final Block EXAMPLE_SLAB = registerBlock("example_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
     public static final Block BLACK_ROCK_SLAB = registerBlock("black_rock_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block BLACK_ROCK_BRICK_SLAB = registerBlock("black_rock_brick_slab",
@@ -73,8 +73,8 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     // Walls
-    public static final Block EXAMPLE_WALL = registerBlock("example_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    /*public static final Block EXAMPLE_WALL = registerBlock("example_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
     public static final Block BLACK_ROCK_WALL = registerBlock("black_rock_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block BLACK_ROCK_BRICK_WALL = registerBlock("black_rock_brick_wall",
@@ -83,10 +83,10 @@ public class ModBlocks {
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     // Fences and Gates
-    public static final Block EXAMPLE_FENCE = registerBlock("example_fence",
+    /*public static final Block EXAMPLE_FENCE = registerBlock("example_fence",
             new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
     public static final Block EXAMPLE_FENCE_GATE = registerBlock("example_fence_gate",
-            new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));
+            new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
 
 
 
@@ -106,8 +106,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
 
 // Full Blocks
-            entries.add(ModBlocks.EXAMPLE_BLOCK);
-            entries.add(ModBlocks.LONG_NOSE_BLOCK);
+            //entries.add(ModBlocks.EXAMPLE_BLOCK);
             entries.add(ModBlocks.BLACK_ROCK_BRICKS);
             entries.add(ModBlocks.BLACK_ROCK);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK);
