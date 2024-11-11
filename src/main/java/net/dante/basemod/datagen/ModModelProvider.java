@@ -18,12 +18,12 @@ public class ModModelProvider extends FabricModelProvider {
         //BlockStateModelGenerator.BlockTexturePool examplePool =  blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EXAMPLE_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LONG_NOSE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_PLANKS);
 
         BlockStateModelGenerator.BlockTexturePool blackRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK);
         BlockStateModelGenerator.BlockTexturePool gildedquartzPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GILDED_QUARTZ_BRICKS);
         BlockStateModelGenerator.BlockTexturePool blackRockBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK_BRICKS);
         BlockStateModelGenerator.BlockTexturePool smoothBlackRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_BLACK_ROCK);
+        BlockStateModelGenerator.BlockTexturePool amethystplankPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.AMETHYST_PLANKS);
 
         //example pool
 
@@ -60,6 +60,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_GRASS_BLOCK);
         blockStateModelGenerator.registerLog(ModBlocks.AMETHYST_LOG).log(ModBlocks.AMETHYST_LOG);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_LEAVES);
+
+        //Amethyst Plank Pool
+
+        amethystplankPool.stairs(ModBlocks.AMETHYST_PLANK_STAIRS);
     }
 
     @Override

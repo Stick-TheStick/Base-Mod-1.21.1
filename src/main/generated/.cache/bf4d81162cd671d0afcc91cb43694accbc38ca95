@@ -1,6 +1,6 @@
-// 1.21.1	2024-11-11T13:34:51.9825843	Base Mod/Tags for minecraft:block
+// 1.21.1	2024-11-11T13:51:35.9196084	Base Mod/Tags for minecraft:block
 1e03d2f34fcfbae01365fee4a191af939a56fa0a data\minecraft\tags\block\mineable\pickaxe.json
-60f92be2a1a8220059584477b3a45c7c7d9cb3f4 data\minecraft\tags\block\mineable\axe.json
+ab565bff5bcc1ee39b91b8992e7461a08ad98673 data\minecraft\tags\block\mineable\axe.json
 7ab618daa41fe74153a5b5d31787f79025e1870c data\minecraft\tags\block\walls.json
 6fe28d917071674f5d14ee7660d09f197baec461 data\minecraft\tags\block\leaves.json
 2492bc7e3825d63e507354c9813a8d19e16910e3 data\minecraft\tags\block\dirt.json

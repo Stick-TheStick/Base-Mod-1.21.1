@@ -53,6 +53,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLACK_ROCK_BRICK_STAIRS)
                 .add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.AMETHYST_PLANK_STAIRS);
+
 // Slabs
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.BLACK_ROCK_SLAB)

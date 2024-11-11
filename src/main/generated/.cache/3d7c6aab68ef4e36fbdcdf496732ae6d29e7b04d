@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-11T13:34:51.9765901	Base Mod/Block Loot Tables
+// 1.21.1	2024-11-11T13:51:35.9126123	Base Mod/Block Loot Tables
 e81962ed950e56558d732020f3c35ad158362725 data\basemod\loot_table\blocks\smooth_black_rock_stairs.json
 8ac23cde68b17bc583edf5f80adae77004f11fed data\basemod\loot_table\blocks\amethyst_grass_block.json
 58ff1d3801d3becf16ee431ddd5d39a94b837ec3 data\basemod\loot_table\blocks\black_rock_brick_stair.json
@@ -7,6 +7,7 @@ a4e115e1b9933f626b77dc8f96a72d9d16578644 data\basemod\loot_table\blocks\amethyst
 03e300439eba0fe904c49bddb75c4091d9be4c68 data\basemod\loot_table\blocks\smooth_black_rock_slab.json
 3829afee89ec1e8af5049bb30b76991624c36fc2 data\basemod\loot_table\blocks\black_rock_stairs.json
 085554c2a5717e6543b3f285adfad8894e0f22e7 data\basemod\loot_table\blocks\black_rock_bricks.json
+bb758fbf07ecca8fd59c6879188d002a1a0d8e65 data\basemod\loot_table\blocks\amethyst_plank_stairs.json
 ed19ceef545b9fab7bc2cf5cc9108ca0b329fd5a data\basemod\loot_table\blocks\long_nose_block.json
 856d2d9efa3e0202e71c815bd4fcc166f48d0d84 data\basemod\loot_table\blocks\gilded_quartz_bricks.json
 0c45f839412b232ac3378113b261948fc8864661 data\basemod\loot_table\blocks\gilded_quartz_brick_stairs.json
@@ -18,4 +19,5 @@ cc42c155b4ec458eb17d4ef96be7582ec81cc544 data\basemod\loot_table\blocks\black_ro
 f31ed07154e9399c210d2b27a02706fea919814d data\basemod\loot_table\blocks\smooth_black_rock.json
 b8c3e152b091eed5958b9ca67d05de5960d747c8 data\basemod\loot_table\blocks\black_rock_slab.json
 ea5cf0411650a3b32d3ee06994fc0eaa9d602815 data\basemod\loot_table\blocks\black_rock_brick_wall.json
+45c9783d240c595b8f24d9793100e413df8322b1 data\basemod\loot_table\blocks\amethyst_planks.json
 65be4bfb09c6f886ba86ded738be4956fc9e0764 data\basemod\loot_table\blocks\gilded_quartz_brick_wall.json

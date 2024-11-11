@@ -61,6 +61,10 @@ public class ModBlocks {
     public static final Block GILDED_QUARTZ_BRICK_STAIRS = registerBlock("gilded_quartz_brick_stairs",
             new StairsBlock(ModBlocks.GILDED_QUARTZ_BRICKS.getDefaultState(),
                     AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block AMETHYST_PLANK_STAIRS = registerBlock("amethyst_plank_stairs",
+            new StairsBlock(ModBlocks.AMETHYST_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
 
     // Slabs
     /*public static final Block EXAMPLE_SLAB = registerBlock("example_slab",
@@ -86,9 +90,11 @@ public class ModBlocks {
     public static final Block GILDED_QUARTZ_BRICK_WALL = registerBlock("gilded_quartz_brick_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
-    // Fences and Gates
+    // Fences
     /*public static final Block EXAMPLE_FENCE = registerBlock("example_fence",
             new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    // Gates
     public static final Block EXAMPLE_FENCE_GATE = registerBlock("example_fence_gate",
             new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
 
@@ -125,6 +131,7 @@ public class ModBlocks {
             entries.add(ModBlocks.BLACK_ROCK_STAIRS);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
             entries.add(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
+            entries.add(ModBlocks.AMETHYST_PLANK_STAIRS);
 
 // Slabs
             entries.add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
