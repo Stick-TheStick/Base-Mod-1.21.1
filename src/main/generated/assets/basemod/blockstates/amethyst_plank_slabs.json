@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "basemod:block/amethyst_plank_slabs"
+    },
+    "type=double": {
+      "model": "basemod:block/amethyst_planks"
+    },
+    "type=top": {
+      "model": "basemod:block/amethyst_plank_slabs_top"
+    }
+  }
+}

@@ -41,6 +41,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLACK_ROCK_BRICK_SLAB, slabDrops(ModBlocks.BLACK_ROCK_BRICK_SLAB));
         addDrop(ModBlocks.SMOOTH_BLACK_ROCK_SLAB, slabDrops(ModBlocks.SMOOTH_BLACK_ROCK_SLAB));
         addDrop(ModBlocks.GILDED_QUARTZ_SLAB, slabDrops(ModBlocks.GILDED_QUARTZ_SLAB));
+        addDrop(ModBlocks.AMETHYST_PLANK_SLAB, slabDrops(ModBlocks.AMETHYST_PLANK_SLAB));
 
 // Walls
         //addDrop(ModBlocks.EXAMPLE_WALL);
@@ -49,9 +50,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
         addDrop(ModBlocks.GILDED_QUARTZ_BRICK_WALL);
 
-// Fences and Gates
+// Fences
         //addDrop(ModBlocks.EXAMPLE_FENCE);
+        addDrop(ModBlocks.AMETHYST_PLANK_FENCE);
+
+// Gates
+
         //addDrop(ModBlocks.EXAMPLE_FENCE_GATE);
+        addDrop(ModBlocks.AMETHYST_PLANK_FENCE_GATE);
     }
 
 

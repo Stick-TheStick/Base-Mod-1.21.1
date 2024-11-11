@@ -24,7 +24,8 @@
   "block.basemod.black_rock_slab": "Black Rock Slab",
   "block.basemod.black_rock_brick_slab": "Black Rock Brick Slab",
   "block.basemod.smooth_black_rock_slab": "Smooth Black Rock Slab",
-  "block.basemod.gilded_quartz_slab": "Gilded Quartz Slab",
+  "block.basemod.gilded_quartz_slab": "Gilded Quartz Brick Slab",
+  "block.basemod.amethyst_plank_slab": "Amethyst Plank Slab",
 
 
   "block.basemod.example_wall": "Example Wall",
@@ -35,7 +36,12 @@
 
 
   "block.basemod.example_fence": "Example Fence",
+  "block.basemod.amethyst_plank_fence": "Amethyst Plank Fence",
+
+
   "block.basemod.example_fence_gate": "Example Fence Gate",
+  "block.basemod.amethyst_plank_fence_gate": "Amethyst Plank Fence Gate",
+
 
   "itemgroup.basemod.base_mod_blocks": "Blocks Galore "
 

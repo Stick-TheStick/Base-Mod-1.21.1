@@ -64,6 +64,9 @@ public class ModModelProvider extends FabricModelProvider {
         //Amethyst Plank Pool
 
         amethystplankPool.stairs(ModBlocks.AMETHYST_PLANK_STAIRS);
+        amethystplankPool.slab(ModBlocks.AMETHYST_PLANK_SLAB);
+        amethystplankPool.fence(ModBlocks.AMETHYST_PLANK_FENCE);
+        amethystplankPool.fenceGate(ModBlocks.AMETHYST_PLANK_FENCE_GATE);
     }
 
     @Override

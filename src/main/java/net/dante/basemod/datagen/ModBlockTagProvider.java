@@ -66,6 +66,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLACK_ROCK_SLAB)
                 .add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.AMETHYST_PLANK_SLAB);
+
 // Walls
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.BLACK_ROCK_WALL)
@@ -85,12 +88,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL)
                 .add(ModBlocks.GILDED_QUARTZ_BRICK_WALL);
 
-// Fences and Gates
-        //getOrCreateTagBuilder(BlockTags.FENCES)
+// Fences
+        getOrCreateTagBuilder(BlockTags.FENCES)
                 //.add(ModBlocks.EXAMPLE_FENCE);
-
-        //getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+        .add(ModBlocks.AMETHYST_PLANK_FENCE);
+// Gates
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 //.add(ModBlocks.EXAMPLE_FENCE_GATE);
+                .add(ModBlocks.AMETHYST_PLANK_FENCE_GATE);
     }
 
 }

@@ -2,6 +2,7 @@
   "values": [
     "basemod:amethyst_log",
     "basemod:amethyst_planks",
-    "basemod:amethyst_plank_stairs"
+    "basemod:amethyst_plank_stairs",
+    "basemod:amethyst_plank_slabs"
   ]
 }

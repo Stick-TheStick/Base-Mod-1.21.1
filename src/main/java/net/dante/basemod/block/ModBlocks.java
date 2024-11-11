@@ -77,6 +77,8 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block GILDED_QUARTZ_SLAB = registerBlock("gilded_quartz_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block AMETHYST_PLANK_SLAB = registerBlock("amethyst_plank_slabs",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     // Walls
     /*public static final Block EXAMPLE_WALL = registerBlock("example_wall",
@@ -93,10 +95,15 @@ public class ModBlocks {
     // Fences
     /*public static final Block EXAMPLE_FENCE = registerBlock("example_fence",
             new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
-
+    */
+     public static final Block AMETHYST_PLANK_FENCE = registerBlock("amethyst_plank_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+/*
     // Gates
     public static final Block EXAMPLE_FENCE_GATE = registerBlock("example_fence_gate",
             new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
+    public static final Block AMETHYST_PLANK_FENCE_GATE = registerBlock("amethyst_plank_fence_gate",
+            new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));
 
 
 
@@ -138,6 +145,7 @@ public class ModBlocks {
             entries.add(ModBlocks.BLACK_ROCK_SLAB);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
             entries.add(ModBlocks.GILDED_QUARTZ_SLAB);
+            entries.add(ModBlocks.AMETHYST_PLANK_SLAB);
 
 
 // Walls
@@ -145,6 +153,12 @@ public class ModBlocks {
             entries.add(ModBlocks.BLACK_ROCK_WALL);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
             entries.add(ModBlocks.GILDED_QUARTZ_BRICK_WALL);
+
+// Fence
+            entries.add(ModBlocks.AMETHYST_PLANK_FENCE);
+
+// Gates
+            entries.add(ModBlocks.AMETHYST_PLANK_FENCE_GATE);
 
         });
     }
