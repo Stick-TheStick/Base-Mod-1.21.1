@@ -83,6 +83,8 @@ public class ModBlocks {
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block SMOOTH_BLACK_ROCK_WALL = registerBlock("smooth_black_rock_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block GILDED_QUARTZ_BRICK_WALL = registerBlock("gilded_quartz_brick_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     // Fences and Gates
     /*public static final Block EXAMPLE_FENCE = registerBlock("example_fence",
@@ -135,6 +137,7 @@ public class ModBlocks {
             entries.add(ModBlocks.BLACK_ROCK_BRICK_WALL);
             entries.add(ModBlocks.BLACK_ROCK_WALL);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+            entries.add(ModBlocks.GILDED_QUARTZ_BRICK_WALL);
 
         });
     }

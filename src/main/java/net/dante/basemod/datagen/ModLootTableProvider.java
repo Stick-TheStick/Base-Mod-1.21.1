@@ -45,6 +45,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLACK_ROCK_WALL);
         addDrop(ModBlocks.BLACK_ROCK_BRICK_WALL);
         addDrop(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+        addDrop(ModBlocks.GILDED_QUARTZ_BRICK_WALL);
 
 // Fences and Gates
         //addDrop(ModBlocks.EXAMPLE_FENCE);
