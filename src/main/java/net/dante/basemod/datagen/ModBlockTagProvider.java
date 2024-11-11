@@ -21,7 +21,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLACK_ROCK_BRICKS)
                 .add(ModBlocks.BLACK_ROCK)
                 .add(ModBlocks.SMOOTH_BLACK_ROCK)
-                .add(ModBlocks.GILDED_QUARTZ_BRICKS)
+                .add(ModBlocks.GILDED_QUARTZ_BRICKS);
+
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.AMETHYST_LOG)
                 .add(ModBlocks.AMETHYST_PLANKS);
 
@@ -54,7 +56,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 // Slabs
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.BLACK_ROCK_SLAB)
-                .add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
+                .add(ModBlocks.BLACK_ROCK_BRICK_SLAB)
+                .add(ModBlocks.GILDED_QUARTZ_SLAB);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLACK_ROCK_SLAB)

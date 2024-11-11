@@ -54,6 +54,7 @@ public class ModModelProvider extends FabricModelProvider {
         //Gilded Quartz Pool
 
         gildedquartzPool.stairs(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
+        gildedquartzPool.slab(ModBlocks.GILDED_QUARTZ_SLAB);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_GRASS_BLOCK);
         blockStateModelGenerator.registerLog(ModBlocks.AMETHYST_LOG).log(ModBlocks.AMETHYST_LOG);

@@ -71,6 +71,8 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block SMOOTH_BLACK_ROCK_SLAB = registerBlock("smooth_black_rock_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block GILDED_QUARTZ_SLAB = registerBlock("gilded_quartz_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     // Walls
     /*public static final Block EXAMPLE_WALL = registerBlock("example_wall",
@@ -126,6 +128,8 @@ public class ModBlocks {
             entries.add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
             entries.add(ModBlocks.BLACK_ROCK_SLAB);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
+            entries.add(ModBlocks.GILDED_QUARTZ_SLAB);
+
 
 // Walls
             entries.add(ModBlocks.BLACK_ROCK_BRICK_WALL);

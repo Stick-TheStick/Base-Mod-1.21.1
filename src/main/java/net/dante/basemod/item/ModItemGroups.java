@@ -57,6 +57,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.GILDED_QUARTZ_BRICKS);
                         entries.add(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
+                        entries.add(ModBlocks.GILDED_QUARTZ_SLAB);
 
                     }).build());
 
