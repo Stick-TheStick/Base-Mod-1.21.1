@@ -33,13 +33,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SMOOTH_BLACK_ROCK);
 
         getOrCreateTagBuilder(BlockTags.DIRT)
-                .add(ModBlocks.AMETHYST_GRASS_BLOCK);
+                .add(ModBlocks.AMETHYST_GRASS_BLOCK)
+                .add(ModBlocks.WITHERED_GRASS_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.AMETHYST_LOG);
 
         //Supposed to be leaves
         getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.AMETHYST_LEAVES);
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.AMETHYST_LEAVES);
 
 // Stairs

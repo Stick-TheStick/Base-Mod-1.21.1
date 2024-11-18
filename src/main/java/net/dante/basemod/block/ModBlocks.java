@@ -35,6 +35,9 @@ public class ModBlocks {
     public static final Block AMETHYST_GRASS_BLOCK = registerBlock("amethyst_grass_block",
             new GrassBlock(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.GRASS)));
+    public static final Block WITHERED_GRASS_BLOCK = registerBlock("withered_grass_block",
+            new GrassBlock(AbstractBlock.Settings.create().strength(1f)
+                    .sounds(BlockSoundGroup.GRASS)));
     public static final Block AMETHYST_LEAVES = registerBlock("amethyst_leaves",
             new LeavesBlock(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.CHERRY_LEAVES)));
@@ -121,44 +124,42 @@ public class ModBlocks {
         BaseMod.LOGGER.info("Registering Blocks for" + BaseMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-
-// Full Blocks
-            //entries.add(ModBlocks.EXAMPLE_BLOCK);
-            entries.add(ModBlocks.BLACK_ROCK_BRICKS);
-            entries.add(ModBlocks.BLACK_ROCK);
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK);
+// Amethyst
             entries.add(ModBlocks.AMETHYST_GRASS_BLOCK);
             entries.add(ModBlocks.AMETHYST_LEAVES);
-            entries.add(ModBlocks.GILDED_QUARTZ_BRICKS);
             entries.add(ModBlocks.AMETHYST_LOG);
             entries.add(ModBlocks.AMETHYST_PLANKS);
-
-// Stairs
-            entries.add(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
-            entries.add(ModBlocks.BLACK_ROCK_STAIRS);
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
-            entries.add(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
             entries.add(ModBlocks.AMETHYST_PLANK_STAIRS);
-
-// Slabs
-            entries.add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
-            entries.add(ModBlocks.BLACK_ROCK_SLAB);
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
-            entries.add(ModBlocks.GILDED_QUARTZ_SLAB);
             entries.add(ModBlocks.AMETHYST_PLANK_SLAB);
+            entries.add(ModBlocks.AMETHYST_PLANK_FENCE);
+            entries.add(ModBlocks.AMETHYST_PLANK_FENCE_GATE);
 
-
-// Walls
-            entries.add(ModBlocks.BLACK_ROCK_BRICK_WALL);
+// Black Rock
+            entries.add(ModBlocks.BLACK_ROCK);
+            entries.add(ModBlocks.BLACK_ROCK_STAIRS);
+            entries.add(ModBlocks.BLACK_ROCK_SLAB);
             entries.add(ModBlocks.BLACK_ROCK_WALL);
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+
+// Black Rock Bricks
+            entries.add(ModBlocks.BLACK_ROCK_BRICKS);
+            entries.add(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
+            entries.add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
+            entries.add(ModBlocks.BLACK_ROCK_BRICK_WALL);
+
+// Gilded Quartz
+            entries.add(ModBlocks.GILDED_QUARTZ_BRICKS);
+            entries.add(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
+            entries.add(ModBlocks.GILDED_QUARTZ_SLAB);
             entries.add(ModBlocks.GILDED_QUARTZ_BRICK_WALL);
 
-// Fence
-            entries.add(ModBlocks.AMETHYST_PLANK_FENCE);
+// Smooth Black Rock
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK);
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
+            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
-// Gates
-            entries.add(ModBlocks.AMETHYST_PLANK_FENCE_GATE);
+// Withered Grass
+            entries.add(ModBlocks.WITHERED_GRASS_BLOCK);
 
         });
     }

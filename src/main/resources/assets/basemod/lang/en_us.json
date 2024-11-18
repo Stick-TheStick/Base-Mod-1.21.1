@@ -9,6 +9,8 @@
   "block.basemod.amethyst_leaves": "Amethyst Leaves",
   "block.basemod.gilded_quartz_bricks": "Gilded Quartz Bricks",
   "block.basemod.amethyst_planks": "Amethyst Planks",
+  "block.basemod.withered_grass_block": "Withered Grass",
+
 
 
   "block.basemod.example_stairs": "Example Stairs",
@@ -25,7 +27,7 @@
   "block.basemod.black_rock_brick_slab": "Black Rock Brick Slab",
   "block.basemod.smooth_black_rock_slab": "Smooth Black Rock Slab",
   "block.basemod.gilded_quartz_slab": "Gilded Quartz Brick Slab",
-  "block.basemod.amethyst_plank_slab": "Amethyst Plank Slab",
+  "block.basemod.amethyst_plank_slabs": "Amethyst Plank Slab",
 
 
   "block.basemod.example_wall": "Example Wall",
