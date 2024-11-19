@@ -100,6 +100,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 //.add(ModBlocks.EXAMPLE_FENCE_GATE);
                 .add(ModBlocks.AMETHYST_PLANK_FENCE_GATE);
+
+// Plants
+
+        getOrCreateTagBuilder((BlockTags.FLOWERS))
+                .add(ModBlocks.WITHERED_GRASS);
     }
 
 }

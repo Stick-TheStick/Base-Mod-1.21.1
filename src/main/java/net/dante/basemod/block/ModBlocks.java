@@ -39,7 +39,7 @@ public class ModBlocks {
             new GrassBlock(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.GRASS)));
     public static final Block AMETHYST_LEAVES = registerBlock("amethyst_leaves",
-            new LeavesBlock(AbstractBlock.Settings.create().strength(1f)
+            new LeavesBlock(AbstractBlock.Settings.create().strength(1f).nonOpaque()
                     .sounds(BlockSoundGroup.CHERRY_LEAVES)));
     public static final Block AMETHYST_LOG = registerBlock("amethyst_log",
             new PillarBlock(AbstractBlock.Settings.create().strength(1f)
@@ -95,6 +95,13 @@ public class ModBlocks {
     public static final Block GILDED_QUARTZ_BRICK_WALL = registerBlock("gilded_quartz_brick_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
+    //2D blocks
+
+    public static final Block WITHERED_GRASS = registerBlock("withered_grass",
+            new ShortPlantBlock(AbstractBlock.Settings.create().nonOpaque().noCollision().burnable().breakInstantly()
+                    .sounds(BlockSoundGroup.GRASS)));
+
+
     // Fences
     /*public static final Block EXAMPLE_FENCE = registerBlock("example_fence",
             new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
@@ -106,7 +113,9 @@ public class ModBlocks {
     public static final Block EXAMPLE_FENCE_GATE = registerBlock("example_fence_gate",
             new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
     public static final Block AMETHYST_PLANK_FENCE_GATE = registerBlock("amethyst_plank_fence_gate",
-            new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));
+            new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()
+                    .sounds(BlockSoundGroup.WOOD)));
+
 
 
 
@@ -158,8 +167,9 @@ public class ModBlocks {
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
             entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
-// Withered Grass
+// Withered Blocks
             entries.add(ModBlocks.WITHERED_GRASS_BLOCK);
+            entries.add(ModBlocks.WITHERED_GRASS);
 
         });
     }

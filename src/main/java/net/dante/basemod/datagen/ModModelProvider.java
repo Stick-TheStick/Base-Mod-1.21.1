@@ -4,6 +4,7 @@ import net.dante.basemod.block.ModBlocks;
 import net.dante.basemod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.PlantBlock;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -19,6 +20,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LONG_NOSE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_LEAVES);
+        blockStateModelGenerator.registerItemModel(ModBlocks.WITHERED_GRASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WITHERED_GRASS_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WITHERED_GRASS);
+
+
 
         BlockStateModelGenerator.BlockTexturePool blackRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK);
         BlockStateModelGenerator.BlockTexturePool gildedquartzPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GILDED_QUARTZ_BRICKS);
