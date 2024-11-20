@@ -54,6 +54,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.AMETHYST_LOG);
                         entries.add(ModBlocks.AMETHYST_PLANKS);
                         entries.add(ModBlocks.AMETHYST_LEAVES);
+                        entries.add(ModBlocks.WITHERED_GRASS);
 
                         entries.add(ModBlocks.GILDED_QUARTZ_BRICKS);
                         entries.add(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
