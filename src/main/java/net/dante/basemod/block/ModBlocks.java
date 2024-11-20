@@ -98,7 +98,7 @@ public class ModBlocks {
     //2D blocks
 
     public static final Block WITHERED_GRASS = registerBlock("withered_grass",
-            new ShortPlantBlock(AbstractBlock.Settings.create().noCollision().burnable().breakInstantly()
+            new ShortPlantBlock(AbstractBlock.Settings.create().noCollision().burnable().breakInstantly().nonOpaque()
                     .sounds(BlockSoundGroup.GRASS)));
 
 
