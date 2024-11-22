@@ -34,32 +34,42 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.AMETHYST_GRASS_BLOCK))
                     .displayName(Text.translatable("itemgroup.basemod.base_mod_blocks"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.BLACK_ROCK_BRICKS);
-                        entries.add(ModBlocks.BLACK_ROCK);
-                        entries.add(ModBlocks.SMOOTH_BLACK_ROCK);
+                        entries.add(ModBlocks.AMETHYST_GRASS_BLOCK);
+                        entries.add(ModBlocks.AMETHYST_LEAVES);
+                        entries.add(ModBlocks.AMETHYST_LOG);
+                        entries.add(ModBlocks.AMETHYST_PLANKS);
+                        entries.add(ModBlocks.AMETHYST_PLANK_STAIRS);
+                        entries.add(ModBlocks.AMETHYST_PLANK_SLAB);
+                        entries.add(ModBlocks.AMETHYST_PLANK_FENCE);
+                        entries.add(ModBlocks.AMETHYST_PLANK_FENCE_GATE);
 
+// Black Rock
+                        entries.add(ModBlocks.BLACK_ROCK);
                         entries.add(ModBlocks.BLACK_ROCK_STAIRS);
                         entries.add(ModBlocks.BLACK_ROCK_SLAB);
                         entries.add(ModBlocks.BLACK_ROCK_WALL);
 
+// Black Rock Bricks
+                        entries.add(ModBlocks.BLACK_ROCK_BRICKS);
                         entries.add(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
                         entries.add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
                         entries.add(ModBlocks.BLACK_ROCK_BRICK_WALL);
 
+// Gilded Quartz
+                        entries.add(ModBlocks.GILDED_QUARTZ_BRICKS);
+                        entries.add(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
+                        entries.add(ModBlocks.GILDED_QUARTZ_SLAB);
+                        entries.add(ModBlocks.GILDED_QUARTZ_BRICK_WALL);
+
+// Smooth Black Rock
+                        entries.add(ModBlocks.SMOOTH_BLACK_ROCK);
                         entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
                         entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
                         entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
 
-                        entries.add(ModBlocks.AMETHYST_GRASS_BLOCK);
-                        entries.add(ModBlocks.AMETHYST_LOG);
-                        entries.add(ModBlocks.AMETHYST_PLANKS);
-                        entries.add(ModBlocks.AMETHYST_LEAVES);
+// Withered Blocks
+                        entries.add(ModBlocks.WITHERED_GRASS_BLOCK);
                         entries.add(ModBlocks.WITHERED_GRASS);
-
-                        entries.add(ModBlocks.GILDED_QUARTZ_BRICKS);
-                        entries.add(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
-                        entries.add(ModBlocks.GILDED_QUARTZ_SLAB);
-
                     }).build());
 
     public static void registerItemGroups(){
