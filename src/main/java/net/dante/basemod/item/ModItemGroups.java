@@ -11,23 +11,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    /*public static final ItemGroup EXAMPLE_THINGS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(BaseMod.MOD_ID, "example_things"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.EXAMPLE_ITEM ))
-                    .displayName(Text.translatable("itemgroup.basemod.example_things"))
-                    .entries((displayContext, entries) -> {
-                        entries.add(ModItems.EXAMPLE_ITEM);
-                        /*entries.add(ModBlocks.EXAMPLE_BLOCK);
-
-                        entries.add(ModBlocks.LONG_NOSE_BLOCK);
-
-                        entries.add(ModBlocks.EXAMPLE_STAIRS);
-                        entries.add(ModBlocks.EXAMPLE_SLAB);
-
-                        entries.add(ModBlocks.EXAMPLE_FENCE);
-                        entries.add(ModBlocks.EXAMPLE_FENCE_GATE);
-                        entries.add(ModBlocks.EXAMPLE_WALL);
-                    }).build());*/
 
     public static final ItemGroup BASE_MOD_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(BaseMod.MOD_ID, "base_mod_blocks"),
