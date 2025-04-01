@@ -47,7 +47,7 @@ public class ModBlocks {
     public static final Block AMETHYST_PLANKS = registerBlock("amethyst_planks",
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
                     .sounds(BlockSoundGroup.WOOD)));
-    public static final Block HEAVYSTONEBRICKS = registerBlock("heavy_stone_bricks",
+    public static final Block HEAVY_STONE_BRICKS = registerBlock("heavy_stone_bricks",
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
                     .sounds(BlockSoundGroup.STONE)));
 
@@ -70,7 +70,7 @@ public class ModBlocks {
     public static final Block AMETHYST_PLANK_STAIRS = registerBlock("amethyst_plank_stairs",
             new StairsBlock(ModBlocks.AMETHYST_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block HEAVYSTONEBRICKSTAIRS = registerBlock("gilded_quartz_brick_wall",
+    public static final Block HEAVY_STONE_BRICK_STAIRS = registerBlock("heavy_stone_brick_stairs",
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
 
@@ -87,7 +87,7 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block AMETHYST_PLANK_SLAB = registerBlock("amethyst_plank_slabs",
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block HEAVYSTONEBRICKSLAB = registerBlock("gilded_quartz_brick_wall",
+    public static final Block HEAVY_STONE_BRICK_SLAB = registerBlock("heavy_stone_brick_slab",
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     // Walls
@@ -101,7 +101,7 @@ public class ModBlocks {
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block GILDED_QUARTZ_BRICK_WALL = registerBlock("gilded_quartz_brick_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block HEAVYSTONEBRICKWALL = registerBlock("gilded_quartz_brick_wall",
+    public static final Block HEAVY_STONE_BRICK_WALL = registerBlock("heavy_stone_brick_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     //2D blocks
@@ -180,10 +180,10 @@ public class ModBlocks {
             entries.add(ModBlocks.WITHERED_GRASS_BLOCK);
             entries.add(ModBlocks.WITHERED_GRASS);
 // Heavy Bricks
-            entries.add(ModBlocks.HEAVYSTONEBRICKS);
-            entries.add(ModBlocks.HEAVYSTONEBRICKSTAIRS);
-            entries.add(ModBlocks.HEAVYSTONEBRICKSLAB);
-            entries.add(ModBlocks.HEAVYSTONEBRICKWALL);
+            entries.add(ModBlocks.HEAVY_STONE_BRICKS);
+            entries.add(ModBlocks.HEAVY_STONE_BRICK_STAIRS);
+            entries.add(ModBlocks.HEAVY_STONE_BRICK_SLAB);
+            entries.add(ModBlocks.HEAVY_STONE_BRICK_WALL);
 
         });
     }

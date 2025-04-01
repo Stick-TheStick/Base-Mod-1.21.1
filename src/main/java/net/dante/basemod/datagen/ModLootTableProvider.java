@@ -26,6 +26,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AMETHYST_LOG);
         addDrop(ModBlocks.GILDED_QUARTZ_BRICKS);
         addDrop(ModBlocks.AMETHYST_PLANKS);
+        addDrop(ModBlocks.HEAVY_STONE_BRICKS);
 
 // Stairs
         //addDrop(ModBlocks.EXAMPLE_STAIRS);

@@ -90,7 +90,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLACK_ROCK_WALL)
                 .add(ModBlocks.BLACK_ROCK_BRICK_WALL)
                 .add(ModBlocks.SMOOTH_BLACK_ROCK_WALL)
-                .add(ModBlocks.GILDED_QUARTZ_BRICK_WALL);
+                .add(ModBlocks.GILDED_QUARTZ_BRICK_WALL)
+                .add(ModBlocks.HEAVY_STONE_BRICK_WALL);
 
 // Fences
         getOrCreateTagBuilder(BlockTags.FENCES)

@@ -3,6 +3,7 @@
     "basemod:black_rock_wall",
     "basemod:black_rock_brick_wall",
     "basemod:smooth_black_rock_wall",
-    "basemod:gilded_quartz_brick_wall"
+    "basemod:gilded_quartz_brick_wall",
+    "basemod:heavy_stone_brick_wall"
   ]
 }

@@ -54,10 +54,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.WITHERED_GRASS_BLOCK);
                         entries.add(ModBlocks.WITHERED_GRASS);
 // Heavy Bricks
-                        entries.add(ModBlocks.HEAVYSTONEBRICKS);
-                        entries.add(ModBlocks.HEAVYSTONEBRICKSTAIRS);
-                        entries.add(ModBlocks.HEAVYSTONEBRICKSLAB);
-                        entries.add(ModBlocks.HEAVYSTONEBRICKWALL);
+                        entries.add(ModBlocks.HEAVY_STONE_BRICKS);
+                        entries.add(ModBlocks.HEAVY_STONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.HEAVY_STONE_BRICK_SLAB);
+                        entries.add(ModBlocks.HEAVY_STONE_BRICK_WALL);
 
                     }).build());
 

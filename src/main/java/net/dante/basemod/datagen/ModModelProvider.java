@@ -1,13 +1,10 @@
 package net.dante.basemod.datagen;
 
 import net.dante.basemod.block.ModBlocks;
-import net.dante.basemod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.PlantBlock;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -23,10 +20,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerItemModel(ModBlocks.WITHERED_GRASS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WITHERED_GRASS_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WITHERED_GRASS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HEAVYSTONEBRICKS);
 
 
-        BlockStateModelGenerator.BlockTexturePool heavybrickpool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HEAVYSTONEBRICKS);
+
+        BlockStateModelGenerator.BlockTexturePool heavybrickpool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HEAVY_STONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool blackRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK);
         BlockStateModelGenerator.BlockTexturePool gildedquartzPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GILDED_QUARTZ_BRICKS);
         BlockStateModelGenerator.BlockTexturePool blackRockBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK_BRICKS);
@@ -76,9 +73,9 @@ public class ModModelProvider extends FabricModelProvider {
         amethystplankPool.fenceGate(ModBlocks.AMETHYST_PLANK_FENCE_GATE);
 
         //Heavy Stone Bricks Pool
-        heavybrickpool.stairs(ModBlocks.HEAVYSTONEBRICKSTAIRS);
-        heavybrickpool.slab(ModBlocks.HEAVYSTONEBRICKSLAB);
-        heavybrickpool.wall(ModBlocks.HEAVYSTONEBRICKWALL);
+        heavybrickpool.stairs(ModBlocks.HEAVY_STONE_BRICK_STAIRS);
+        heavybrickpool.slab(ModBlocks.HEAVY_STONE_BRICK_SLAB);
+        heavybrickpool.wall(ModBlocks.HEAVY_STONE_BRICK_WALL);
     }
 
     @Override
