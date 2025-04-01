@@ -53,6 +53,12 @@ public class ModItemGroups {
 // Withered Blocks
                         entries.add(ModBlocks.WITHERED_GRASS_BLOCK);
                         entries.add(ModBlocks.WITHERED_GRASS);
+// Heavy Bricks
+                        entries.add(ModBlocks.HEAVYSTONEBRICKS);
+                        entries.add(ModBlocks.HEAVYSTONEBRICKSTAIRS);
+                        entries.add(ModBlocks.HEAVYSTONEBRICKSLAB);
+                        entries.add(ModBlocks.HEAVYSTONEBRICKWALL);
+
                     }).build());
 
     public static void registerItemGroups(){
