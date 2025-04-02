@@ -50,6 +50,9 @@ public class ModBlocks {
     public static final Block HEAVY_STONE_BRICKS = registerBlock("heavy_stone_bricks",
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
                     .sounds(BlockSoundGroup.STONE)));
+    public static final Block HEAVY_STONE_TILES = registerBlock("heavy_stone_tiles",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
+                    .sounds(BlockSoundGroup.STONE)));
 
     // Stairs
     /*public static final Block EXAMPLE_STAIRS = registerBlock("example_stairs",
@@ -185,6 +188,11 @@ public class ModBlocks {
             entries.add(ModBlocks.HEAVY_STONE_BRICK_STAIRS);
             entries.add(ModBlocks.HEAVY_STONE_BRICK_SLAB);
             entries.add(ModBlocks.HEAVY_STONE_BRICK_WALL);
+// Heavy Stone Tiles
+            entries.add((ModBlocks.HEAVY_STONE_TILES));
+            entries.add((ModBlocks.HEAVY_STONE_TILE_SLAB));
+            entries.add((ModBlocks.HEAVY_STONE_TILE_STAIR));
+            entries.add((ModBlocks.HEAVY_STONE_TILE_WALL);
 
         });
     }
