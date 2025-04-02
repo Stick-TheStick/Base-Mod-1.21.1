@@ -71,8 +71,8 @@ public class ModBlocks {
             new StairsBlock(ModBlocks.AMETHYST_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block HEAVY_STONE_BRICK_STAIRS = registerBlock("heavy_stone_brick_stairs",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-
+            new StairsBlock(ModBlocks.HEAVY_STONE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     // Slabs
     /*public static final Block EXAMPLE_SLAB = registerBlock("example_slab",
@@ -88,7 +88,8 @@ public class ModBlocks {
     public static final Block AMETHYST_PLANK_SLAB = registerBlock("amethyst_plank_slabs",
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block HEAVY_STONE_BRICK_SLAB = registerBlock("heavy_stone_brick_slab",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
 
     // Walls
     /*public static final Block EXAMPLE_WALL = registerBlock("example_wall",

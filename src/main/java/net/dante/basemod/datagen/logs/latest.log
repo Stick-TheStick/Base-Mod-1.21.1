@@ -1,5 +1,5 @@
-[22:50:54] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.5
-[22:50:54] [main/INFO] (FabricLoader) Loading 43 mods:
+[19:40:00] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.5
+[19:40:00] [main/INFO] (FabricLoader) Loading 43 mods:
 	- basemod 1.0.0
 	- fabric-api 0.104.0+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c19
@@ -43,3 +43,22 @@
 	- java 21
 	- minecraft 1.21.1
 	- mixinextras 0.4.1
+[19:40:00] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/konko_t1pm617/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/51ee0a44ab05f6fddd66b09e66b3a16904f9c55d/sponge-mixin-0.15.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[19:40:00] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[19:40:01] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[19:40:01] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[19:40:01] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[19:40:09] [main/INFO] (basemod) Registering Item Groups for basemod
+[19:40:09] [main/INFO] (basemod) Registering Mod Items forbasemod
+[19:40:09] [main/INFO] (basemod) Registering Blocks forbasemod
+[19:40:09] [main/INFO] (FabricDataGenHelper) Running data generator for basemod
+[19:40:10] [main/INFO] (Minecraft) Starting provider: Base Mod/Tags for minecraft:block
+[19:40:10] [main/INFO] (Minecraft) Base Mod/Tags for minecraft:block finished after 20 ms
+[19:40:10] [main/INFO] (Minecraft) Starting provider: Base Mod/Tags for minecraft:item
+[19:40:10] [main/INFO] (Minecraft) Base Mod/Tags for minecraft:item finished after 0 ms
+[19:40:10] [main/INFO] (Minecraft) Starting provider: Base Mod/Block Loot Tables
+[19:40:10] [main/INFO] (Minecraft) Base Mod/Block Loot Tables finished after 24 ms
+[19:40:10] [main/INFO] (Minecraft) Starting provider: Base Mod/Model Definitions
+[19:40:10] [main/INFO] (Minecraft) Base Mod/Model Definitions finished after 76 ms
+[19:40:10] [main/INFO] (Minecraft) All providers took: 123 ms
+[19:40:10] [main/INFO] (Minecraft) Caching: total files: 168, old count: 150, new count: 169, removed stale: 0, written: 20
