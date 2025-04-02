@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "basemod:block/heavy_stone_bricks"
+  }
+}

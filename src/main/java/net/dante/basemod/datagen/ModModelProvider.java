@@ -29,7 +29,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool blackRockBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK_BRICKS);
         BlockStateModelGenerator.BlockTexturePool smoothBlackRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_BLACK_ROCK);
         BlockStateModelGenerator.BlockTexturePool amethystplankPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.AMETHYST_PLANKS);
-
+        BlockStateModelGenerator.BlockTexturePool heavystonetilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HEAVY_STONE_TILES);
         //example pool
 
         //examplePool.stairs(ModBlocks.EXAMPLE_STAIRS);
@@ -76,6 +76,11 @@ public class ModModelProvider extends FabricModelProvider {
         heavybrickpool.stairs(ModBlocks.HEAVY_STONE_BRICK_STAIRS);
         heavybrickpool.slab(ModBlocks.HEAVY_STONE_BRICK_SLAB);
         heavybrickpool.wall(ModBlocks.HEAVY_STONE_BRICK_WALL);
+
+        //
+        heavybrickpool.stairs(ModBlocks.HEAVY_STONE_TILE_STAIRS);
+        heavybrickpool.slab(ModBlocks.HEAVY_STONE_TILE_SLAB);
+        heavybrickpool.wall(ModBlocks.HEAVY_STONE_TILE_WALL);
     }
 
     @Override

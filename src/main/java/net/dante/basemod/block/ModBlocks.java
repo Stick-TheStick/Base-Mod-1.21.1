@@ -76,6 +76,9 @@ public class ModBlocks {
     public static final Block HEAVY_STONE_BRICK_STAIRS = registerBlock("heavy_stone_brick_stairs",
             new StairsBlock(ModBlocks.HEAVY_STONE_BRICKS.getDefaultState(),
                     AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block HEAVY_STONE_TILE_STAIRS = registerBlock("heavy_stone_tile_stairs",
+            new StairsBlock(ModBlocks.HEAVY_STONE_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     // Slabs
     /*public static final Block EXAMPLE_SLAB = registerBlock("example_slab",
@@ -92,6 +95,8 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block HEAVY_STONE_BRICK_SLAB = registerBlock("heavy_stone_brick_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block HEAVY_STONE_TILE_SLAB = registerBlock("heavy_stone_tile_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
 
     // Walls
@@ -106,6 +111,8 @@ public class ModBlocks {
     public static final Block GILDED_QUARTZ_BRICK_WALL = registerBlock("gilded_quartz_brick_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block HEAVY_STONE_BRICK_WALL = registerBlock("heavy_stone_brick_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block HEAVY_STONE_TILE_WALL = registerBlock("heavy_stone_tile_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     //2D blocks
@@ -191,8 +198,8 @@ public class ModBlocks {
 // Heavy Stone Tiles
             entries.add((ModBlocks.HEAVY_STONE_TILES));
             entries.add((ModBlocks.HEAVY_STONE_TILE_SLAB));
-            entries.add((ModBlocks.HEAVY_STONE_TILE_STAIR));
-            entries.add((ModBlocks.HEAVY_STONE_TILE_WALL);
+            entries.add((ModBlocks.HEAVY_STONE_TILE_STAIRS));
+            entries.add((ModBlocks.HEAVY_STONE_TILE_WALL));
 
         });
     }
