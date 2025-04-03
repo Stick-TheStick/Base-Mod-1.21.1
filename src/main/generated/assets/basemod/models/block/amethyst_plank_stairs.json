@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "basemod:block/amethyst_planks",
-    "side": "basemod:block/amethyst_planks",
-    "top": "basemod:block/amethyst_planks"
-  }
-}

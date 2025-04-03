@@ -3,205 +3,190 @@ package net.dante.basemod.block;
 import net.dante.basemod.BaseMod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
-import static net.dante.basemod.item.ModItems.TutorialItems.register;
+import java.util.function.Function;
+
+import static net.minecraft.block.Blocks.register;
+import static net.minecraft.item.Items.register;
 
 public class ModBlocks {
 
+    // Registry Keys for Blocks
+    private static final RegistryKey<Block> LONG_NOSE_BLOCK_KEY = createBlockKey("long_nose_block");
+    private static final RegistryKey<Block> BLACK_ROCK_BRICKS_KEY = createBlockKey("black_rock_bricks");
+    private static final RegistryKey<Block> GILDED_QUARTZ_BRICKS_KEY = createBlockKey("gilded_quartz_bricks");
+    private static final RegistryKey<Block> BLACK_ROCK_KEY = createBlockKey("black_rock");
+    private static final RegistryKey<Block> SMOOTH_BLACK_ROCK_KEY = createBlockKey("smooth_black_rock");
+    private static final RegistryKey<Block> AMETHYST_GRASS_BLOCK_KEY = createBlockKey("amethyst_grass_block");
+    private static final RegistryKey<Block> WITHERED_GRASS_BLOCK_KEY = createBlockKey("withered_grass_block");
+    private static final RegistryKey<Block> AMETHYST_LEAVES_KEY = createBlockKey("amethyst_leaves");
+    private static final RegistryKey<Block> AMETHYST_LOG_KEY = createBlockKey("amethyst_log");
+    private static final RegistryKey<Block> AMETHYST_PLANKS_KEY = createBlockKey("amethyst_planks");
+    private static final RegistryKey<Block> HEAVY_STONE_BRICKS_KEY = createBlockKey("heavy_stone_bricks");
+    private static final RegistryKey<Block> HEAVY_STONE_TILES_KEY = createBlockKey("heavy_stone_tiles");
+
     // Full Blocks
-    /*public static final Block EXAMPLE_BLOCK = registerBlock("example_block",
-            new Block(AbstractBlock.Settings.create().strength(1f)
-                    .sounds(BlockSoundGroup.DEEPSLATE)));*/
-    public static final Block LONG_NOSE_BLOCK = registerBlock("long_nose_block",
-            new Block(AbstractBlock.Settings.create().strength(1f)
-                    .sounds(BlockSoundGroup.CANDLE)));
-    public static final Block BLACK_ROCK_BRICKS = registerBlock("black_rock_bricks",
-            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
-                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
-    public static final Block GILDED_QUARTZ_BRICKS = registerBlock("gilded_quartz_bricks",
-            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
-                    .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
-    public static final Block BLACK_ROCK = registerBlock("black_rock",
-            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
-                    .sounds(BlockSoundGroup.DEEPSLATE)));
-    public static final Block SMOOTH_BLACK_ROCK = registerBlock("smooth_black_rock",
-            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
-                    .sounds(BlockSoundGroup.DEEPSLATE)));
-    public static final Block AMETHYST_GRASS_BLOCK = registerBlock("amethyst_grass_block",
-            new GrassBlock(AbstractBlock.Settings.create().strength(1f)
-                    .sounds(BlockSoundGroup.GRASS)));
-    public static final Block WITHERED_GRASS_BLOCK = registerBlock("withered_grass_block",
-            new GrassBlock(AbstractBlock.Settings.create().strength(1f)
-                    .sounds(BlockSoundGroup.GRASS)));
-    public static final Block AMETHYST_LEAVES = registerBlock("amethyst_leaves",
-            new GrassBlock(AbstractBlock.Settings.create().strength(1f).nonOpaque()
-                    .sounds(BlockSoundGroup.CHERRY_LEAVES)));
-    public static final Block AMETHYST_LOG = registerBlock("amethyst_log",
-            new PillarBlock(AbstractBlock.Settings.create().strength(1f)
-                    .sounds(BlockSoundGroup.WOOD)));
-    public static final Block AMETHYST_PLANKS = registerBlock("amethyst_planks",
-            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
-                    .sounds(BlockSoundGroup.WOOD)));
-    public static final Block HEAVY_STONE_BRICKS = registerBlock("heavy_stone_bricks",
-            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
-                    .sounds(BlockSoundGroup.STONE)));
-    public static final Block HEAVY_STONE_TILES = registerBlock("heavy_stone_tiles",
-            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()
-                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block LONG_NOSE_BLOCK = registerBlock(LONG_NOSE_BLOCK_KEY, Block::new,
+            AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.CANDLE));
+    public static final Block BLACK_ROCK_BRICKS = registerBlock(BLACK_ROCK_BRICKS_KEY, Block::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE_BRICKS));
+    public static final Block GILDED_QUARTZ_BRICKS = registerBlock(GILDED_QUARTZ_BRICKS_KEY, Block::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE_BRICKS));
+    public static final Block BLACK_ROCK = registerBlock(BLACK_ROCK_KEY, Block::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
+    public static final Block SMOOTH_BLACK_ROCK = registerBlock(SMOOTH_BLACK_ROCK_KEY, Block::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
+    public static final Block AMETHYST_GRASS_BLOCK = registerBlock(AMETHYST_GRASS_BLOCK_KEY, GrassBlock::new,
+            AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.GRASS));
+    public static final Block WITHERED_GRASS_BLOCK = registerBlock(WITHERED_GRASS_BLOCK_KEY, GrassBlock::new,
+            AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.GRASS));
+    public static final Block AMETHYST_LEAVES = registerBlock(AMETHYST_LEAVES_KEY, GrassBlock::new,
+            AbstractBlock.Settings.create().strength(1f).nonOpaque().sounds(BlockSoundGroup.CHERRY_LEAVES));
+    public static final Block AMETHYST_LOG = registerBlock(AMETHYST_LOG_KEY, PillarBlock::new,
+            AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.WOOD));
+    public static final Block AMETHYST_PLANKS = registerBlock(AMETHYST_PLANKS_KEY, Block::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.WOOD));
+    public static final Block HEAVY_STONE_BRICKS = registerBlock(HEAVY_STONE_BRICKS_KEY, Block::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block HEAVY_STONE_TILES = registerBlock(HEAVY_STONE_TILES_KEY, Block::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.STONE));
 
     // Stairs
-    /*public static final Block EXAMPLE_STAIRS = registerBlock("example_stairs",
-            new StairsBlock(ModBlocks.EXAMPLE_BLOCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
-    public static final Block BLACK_ROCK_STAIRS = registerBlock("black_rock_stairs",
-            new StairsBlock(ModBlocks.BLACK_ROCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block BLACK_ROCK_BRICK_STAIRS = registerBlock("black_rock_brick_stair",
-            new StairsBlock(ModBlocks.BLACK_ROCK_BRICKS.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block SMOOTH_BLACK_ROCK_STAIRS = registerBlock("smooth_black_rock_stairs",
-            new StairsBlock(ModBlocks.SMOOTH_BLACK_ROCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block GILDED_QUARTZ_BRICK_STAIRS = registerBlock("gilded_quartz_brick_stairs",
-            new StairsBlock(ModBlocks.GILDED_QUARTZ_BRICKS.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block AMETHYST_PLANK_STAIRS = registerBlock("amethyst_plank_stairs",
-            new StairsBlock(ModBlocks.AMETHYST_PLANKS.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block HEAVY_STONE_BRICK_STAIRS = registerBlock("heavy_stone_brick_stairs",
-            new StairsBlock(ModBlocks.HEAVY_STONE_BRICKS.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block HEAVY_STONE_TILE_STAIRS = registerBlock("heavy_stone_tile_stairs",
-            new StairsBlock(ModBlocks.HEAVY_STONE_BRICKS.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block BLACK_ROCK_STAIRS = registerBlock(createBlockKey("black_rock_stairs"),
+            settings -> new StairsBlock(BLACK_ROCK.getDefaultState(), settings),
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block BLACK_ROCK_BRICK_STAIRS = registerBlock(createBlockKey("black_rock_brick_stair"),
+            settings -> new StairsBlock(BLACK_ROCK_BRICKS.getDefaultState(), settings),
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block SMOOTH_BLACK_ROCK_STAIRS = registerBlock(createBlockKey("smooth_black_rock_stairs"),
+            settings -> new StairsBlock(SMOOTH_BLACK_ROCK.getDefaultState(), settings),
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block GILDED_QUARTZ_BRICK_STAIRS = registerBlock(createBlockKey("gilded_quartz_brick_stairs"),
+            settings -> new StairsBlock(GILDED_QUARTZ_BRICKS.getDefaultState(), settings),
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block AMETHYST_PLANK_STAIRS = registerBlock(createBlockKey("amethyst_plank_stairs"),
+            settings -> new StairsBlock(AMETHYST_PLANKS.getDefaultState(), settings),
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block HEAVY_STONE_BRICK_STAIRS = registerBlock(createBlockKey("heavy_stone_brick_stairs"),
+            settings -> new StairsBlock(HEAVY_STONE_BRICKS.getDefaultState(), settings),
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block HEAVY_STONE_TILE_STAIRS = registerBlock(createBlockKey("heavy_stone_tile_stairs"),
+            settings -> new StairsBlock(HEAVY_STONE_BRICKS.getDefaultState(), settings),
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
 
     // Slabs
-    /*public static final Block EXAMPLE_SLAB = registerBlock("example_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
-    public static final Block BLACK_ROCK_SLAB = registerBlock("black_rock_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block BLACK_ROCK_BRICK_SLAB = registerBlock("black_rock_brick_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block SMOOTH_BLACK_ROCK_SLAB = registerBlock("smooth_black_rock_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block GILDED_QUARTZ_SLAB = registerBlock("gilded_quartz_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block AMETHYST_PLANK_SLAB = registerBlock("amethyst_plank_slabs",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block HEAVY_STONE_BRICK_SLAB = registerBlock("heavy_stone_brick_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block HEAVY_STONE_TILE_SLAB = registerBlock("heavy_stone_tile_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-
+    public static final Block BLACK_ROCK_SLAB = registerBlock(createBlockKey("black_rock_slab"), SlabBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block BLACK_ROCK_BRICK_SLAB = registerBlock(createBlockKey("black_rock_brick_slab"), SlabBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block SMOOTH_BLACK_ROCK_SLAB = registerBlock(createBlockKey("smooth_black_rock_slab"), SlabBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block GILDED_QUARTZ_SLAB = registerBlock(createBlockKey("gilded_quartz_slab"), SlabBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block AMETHYST_PLANK_SLAB = registerBlock(createBlockKey("amethyst_plank_slabs"), SlabBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block HEAVY_STONE_BRICK_SLAB = registerBlock(createBlockKey("heavy_stone_brick_slab"), SlabBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block HEAVY_STONE_TILE_SLAB = registerBlock(createBlockKey("heavy_stone_tile_slab"), SlabBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
 
     // Walls
-    /*public static final Block EXAMPLE_WALL = registerBlock("example_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
-    public static final Block BLACK_ROCK_WALL = registerBlock("black_rock_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block BLACK_ROCK_BRICK_WALL = registerBlock("black_rock_brick_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block SMOOTH_BLACK_ROCK_WALL = registerBlock("smooth_black_rock_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block GILDED_QUARTZ_BRICK_WALL = registerBlock("gilded_quartz_brick_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block HEAVY_STONE_BRICK_WALL = registerBlock("heavy_stone_brick_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-    public static final Block HEAVY_STONE_TILE_WALL = registerBlock("heavy_stone_tile_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block BLACK_ROCK_WALL = registerBlock(createBlockKey("black_rock_wall"), WallBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block BLACK_ROCK_BRICK_WALL = registerBlock(createBlockKey("black_rock_brick_wall"), WallBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block SMOOTH_BLACK_ROCK_WALL = registerBlock(createBlockKey("smooth_black_rock_wall"), WallBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block GILDED_QUARTZ_BRICK_WALL = registerBlock(createBlockKey("gilded_quartz_brick_wall"), WallBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block HEAVY_STONE_BRICK_WALL = registerBlock(createBlockKey("heavy_stone_brick_wall"), WallBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
+    public static final Block HEAVY_STONE_TILE_WALL = registerBlock(createBlockKey("heavy_stone_tile_wall"), WallBlock::new,
+            AbstractBlock.Settings.create().strength(1f).requiresTool());
 
-    //2D blocks
-
-    public static final Block WITHERED_GRASS = registerBlock("withered_grass",
-            new ShortPlantBlock(AbstractBlock.Settings.create().noCollision().burnable().breakInstantly().nonOpaque()
-                    .sounds(BlockSoundGroup.GRASS)));
-
+    // 2D blocks
+    public static final Block WITHERED_GRASS = registerBlock(createBlockKey("withered_grass"), ShortPlantBlock::new,
+            AbstractBlock.Settings.create().noCollision().burnable().breakInstantly().nonOpaque()
+                    .sounds(BlockSoundGroup.GRASS));
 
     // Fences
-    /*public static final Block EXAMPLE_FENCE = registerBlock("example_fence",
-            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
-    */
-     public static final Block AMETHYST_PLANK_FENCE = registerBlock("amethyst_plank_fence",
-            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
-/*
+    public static final Block AMETHYST_PLANK_FENCE = registerBlock(createBlockKey("amethyst_plank_fence"), FenceBlock::new,
+            AbstractBlock.Settings.create().strength(2f).requiresTool());
+
     // Gates
-    public static final Block EXAMPLE_FENCE_GATE = registerBlock("example_fence_gate",
-            new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));*/
-    public static final Block AMETHYST_PLANK_FENCE_GATE = registerBlock("amethyst_plank_fence_gate",
-            new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()
-                    .sounds(BlockSoundGroup.WOOD)));
+    public static final Block AMETHYST_PLANK_FENCE_GATE = registerBlock(createBlockKey("amethyst_plank_fence_gate"),
+            settings -> new FenceGateBlock(WoodType.DARK_OAK, settings),
+            AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(BlockSoundGroup.WOOD));
 
-    private static Block registerBlock(String name, Block block) {
-        registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(BaseMod.MOD_ID, name), block);
+    private static RegistryKey<Block> createBlockKey(String name) {
+        return RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(BaseMod.MOD_ID, name));
     }
 
-    private static void registerBlockItem(String name, Block block){
-        Registry.register(Registries.ITEM, Identifier.of(BaseMod.MOD_ID, name),
-                new BlockItem(block, new Item.Settings()));
+    private static Block registerBlock(RegistryKey<Block> key, Function<AbstractBlock.Settings, Block> factory,
+                                       AbstractBlock.Settings settings) {
+        final Block block = register(key, factory, settings);
+        register(block); // Register the BlockItem automatically
+        return block;
     }
 
-    public static void registerModBlocks(){
-        BaseMod.LOGGER.info("Registering Blocks for" + BaseMod.MOD_ID);
-
-
+    public static void registerModBlocks() {
+        BaseMod.LOGGER.info("Registering Blocks for " + BaseMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-// Amethyst
-            entries.add(ModBlocks.AMETHYST_GRASS_BLOCK);
-            entries.add(ModBlocks.AMETHYST_LEAVES);
-            entries.add(ModBlocks.AMETHYST_LOG);
-            entries.add(ModBlocks.AMETHYST_PLANKS);
-            entries.add(ModBlocks.AMETHYST_PLANK_STAIRS);
-            entries.add(ModBlocks.AMETHYST_PLANK_SLAB);
-            entries.add(ModBlocks.AMETHYST_PLANK_FENCE);
-            entries.add(ModBlocks.AMETHYST_PLANK_FENCE_GATE);
+            // Amethyst
+            entries.add(AMETHYST_GRASS_BLOCK);
+            entries.add(AMETHYST_LEAVES);
+            entries.add(AMETHYST_LOG);
+            entries.add(AMETHYST_PLANKS);
+            entries.add(AMETHYST_PLANK_STAIRS);
+            entries.add(AMETHYST_PLANK_SLAB);
+            entries.add(AMETHYST_PLANK_FENCE);
+            entries.add(AMETHYST_PLANK_FENCE_GATE);
 
-// Black Rock
-            entries.add(ModBlocks.BLACK_ROCK);
-            entries.add(ModBlocks.BLACK_ROCK_STAIRS);
-            entries.add(ModBlocks.BLACK_ROCK_SLAB);
-            entries.add(ModBlocks.BLACK_ROCK_WALL);
+            // Black Rock
+            entries.add(BLACK_ROCK);
+            entries.add(BLACK_ROCK_STAIRS);
+            entries.add(BLACK_ROCK_SLAB);
+            entries.add(BLACK_ROCK_WALL);
 
-// Black Rock Bricks
-            entries.add(ModBlocks.BLACK_ROCK_BRICKS);
-            entries.add(ModBlocks.BLACK_ROCK_BRICK_STAIRS);
-            entries.add(ModBlocks.BLACK_ROCK_BRICK_SLAB);
-            entries.add(ModBlocks.BLACK_ROCK_BRICK_WALL);
+            // Black Rock Bricks
+            entries.add(BLACK_ROCK_BRICKS);
+            entries.add(BLACK_ROCK_BRICK_STAIRS);
+            entries.add(BLACK_ROCK_BRICK_SLAB);
+            entries.add(BLACK_ROCK_BRICK_WALL);
 
-// Gilded Quartz
-            entries.add(ModBlocks.GILDED_QUARTZ_BRICKS);
-            entries.add(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
-            entries.add(ModBlocks.GILDED_QUARTZ_SLAB);
-            entries.add(ModBlocks.GILDED_QUARTZ_BRICK_WALL);
+            // Gilded Quartz
+            entries.add(GILDED_QUARTZ_BRICKS);
+            entries.add(GILDED_QUARTZ_BRICK_STAIRS);
+            entries.add(GILDED_QUARTZ_SLAB);
+            entries.add(GILDED_QUARTZ_BRICK_WALL);
 
-// Smooth Black Rock
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK);
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_STAIRS);
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_SLAB);
-            entries.add(ModBlocks.SMOOTH_BLACK_ROCK_WALL);
+            // Smooth Black Rock
+            entries.add(SMOOTH_BLACK_ROCK);
+            entries.add(SMOOTH_BLACK_ROCK_STAIRS);
+            entries.add(SMOOTH_BLACK_ROCK_SLAB);
+            entries.add(SMOOTH_BLACK_ROCK_WALL);
 
-// Withered Blocks
-            entries.add(ModBlocks.WITHERED_GRASS_BLOCK);
-            entries.add(ModBlocks.WITHERED_GRASS);
-// Heavy Bricks
-            entries.add(ModBlocks.HEAVY_STONE_BRICKS);
-            entries.add(ModBlocks.HEAVY_STONE_BRICK_STAIRS);
-            entries.add(ModBlocks.HEAVY_STONE_BRICK_SLAB);
-            entries.add(ModBlocks.HEAVY_STONE_BRICK_WALL);
-// Heavy Stone Tiles
-            entries.add((ModBlocks.HEAVY_STONE_TILES));
-            entries.add((ModBlocks.HEAVY_STONE_TILE_SLAB));
-            entries.add((ModBlocks.HEAVY_STONE_TILE_STAIRS));
-            entries.add((ModBlocks.HEAVY_STONE_TILE_WALL));
+            // Withered Blocks
+            entries.add(WITHERED_GRASS_BLOCK);
+            entries.add(WITHERED_GRASS);
 
+            // Heavy Bricks
+            entries.add(HEAVY_STONE_BRICKS);
+            entries.add(HEAVY_STONE_BRICK_STAIRS);
+            entries.add(HEAVY_STONE_BRICK_SLAB);
+            entries.add(HEAVY_STONE_BRICK_WALL);
+
+            // Heavy Stone Tiles
+            entries.add(HEAVY_STONE_TILES);
+            entries.add(HEAVY_STONE_TILE_SLAB);
+            entries.add(HEAVY_STONE_TILE_STAIRS);
+            entries.add(HEAVY_STONE_TILE_WALL);
         });
     }
 }

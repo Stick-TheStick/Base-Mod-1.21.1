@@ -3,11 +3,8 @@ package net.dante.basemod;
 import net.dante.basemod.datagen.ModBlockTagProvider;
 import net.dante.basemod.datagen.ModItemTagProvider;
 import net.dante.basemod.datagen.ModLootTableProvider;
-import net.dante.basemod.datagen.ModModelProvider;
-import net.fabricmc.fabric.api.block.v1.FabricBlockState;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.fabricmc.fabric.api.renderer.v1.model.FabricBlockStateModel;
 
 public class BaseModDataGenerator implements DataGeneratorEntrypoint {
 	@Override

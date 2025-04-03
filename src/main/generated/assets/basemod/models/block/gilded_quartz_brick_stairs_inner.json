@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "basemod:block/gilded_quartz_bricks",
-    "side": "basemod:block/gilded_quartz_bricks",
-    "top": "basemod:block/gilded_quartz_bricks"
-  }
-}
