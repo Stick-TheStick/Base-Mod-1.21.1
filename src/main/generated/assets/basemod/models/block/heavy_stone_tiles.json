@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "basemod:block/heavy_stone_tiles"
+  }
+}

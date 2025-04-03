@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "basemod:block/amethyst_grass_block"
+    }
+  }
+}

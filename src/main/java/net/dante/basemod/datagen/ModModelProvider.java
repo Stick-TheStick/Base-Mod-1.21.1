@@ -13,7 +13,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        //BlockStateModelGenerator.BlockTexturePool examplePool =  blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EXAMPLE_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LONG_NOSE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_LEAVES);
@@ -84,6 +83,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
         //itemModelGenerator.register(ModItems.EXAMPLE_ITEM, Models.GENERATED);
+
     }
 }
