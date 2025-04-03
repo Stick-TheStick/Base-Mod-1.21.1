@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_top",
   "textures": {
-    "all": "basemod:block/withered_grass_block"
+    "side": "basemod:block/withered_grass_block_side",
+    "top": "basemod:block/withered_grass_block_top"
   }
 }

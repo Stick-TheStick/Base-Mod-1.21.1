@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
+import net.minecraft.client.data.TexturedModel;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -14,11 +15,12 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LONG_NOSE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_LEAVES);
-        blockStateModelGenerator.registerItemModel(ModBlocks.WITHERED_GRASS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WITHERED_GRASS_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WITHERED_GRASS);
+        blockStateModelGenerator.registerSingleton(ModBlocks.AMETHYST_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerSingleton(ModBlocks.LONG_NOSE_BLOCK, TexturedModel.CUBE_ALL);
+        blockStateModelGenerator.registerSingleton(ModBlocks.WITHERED_GRASS, TexturedModel.CUBE_ALL);
+        blockStateModelGenerator.registerSingleton(ModBlocks.WITHERED_GRASS_BLOCK, TexturedModel.CUBE_TOP);
+        blockStateModelGenerator.registerSingleton(ModBlocks.AMETHYST_GRASS_BLOCK, TexturedModel.CUBE_TOP);
+        blockStateModelGenerator.registerSingleton(ModBlocks.AMETHYST_LOG, TexturedModel.ORIENTABLE_WITH_BOTTOM);
 
 
 
@@ -60,8 +62,6 @@ public class ModModelProvider extends FabricModelProvider {
         gildedquartzPool.stairs(ModBlocks.GILDED_QUARTZ_BRICK_STAIRS);
         gildedquartzPool.slab(ModBlocks.GILDED_QUARTZ_SLAB);
         gildedquartzPool.wall(ModBlocks.GILDED_QUARTZ_BRICK_WALL);
-
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_GRASS_BLOCK);
 
         //Amethyst Plank Pool
 

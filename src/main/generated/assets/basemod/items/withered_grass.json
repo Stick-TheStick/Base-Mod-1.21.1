@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "basemod:item/withered_grass"
+    "model": "basemod:block/withered_grass"
   }
 }
