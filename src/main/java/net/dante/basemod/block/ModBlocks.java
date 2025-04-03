@@ -11,6 +11,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
+import static net.dante.basemod.item.ModItems.TutorialItems.register;
+
 public class ModBlocks {
 
     // Full Blocks
@@ -136,9 +138,6 @@ public class ModBlocks {
             new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()
                     .sounds(BlockSoundGroup.WOOD)));
 
-
-
-
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(BaseMod.MOD_ID, name), block);
@@ -151,6 +150,8 @@ public class ModBlocks {
 
     public static void registerModBlocks(){
         BaseMod.LOGGER.info("Registering Blocks for" + BaseMod.MOD_ID);
+
+
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
 // Amethyst
