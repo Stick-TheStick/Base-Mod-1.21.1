@@ -39,7 +39,7 @@ public class ModBlocks {
             new GrassBlock(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.GRASS)));
     public static final Block AMETHYST_LEAVES = registerBlock("amethyst_leaves",
-            new LeavesBlock(AbstractBlock.Settings.create().strength(1f).nonOpaque()
+            new GrassBlock(AbstractBlock.Settings.create().strength(1f).nonOpaque()
                     .sounds(BlockSoundGroup.CHERRY_LEAVES)));
     public static final Block AMETHYST_LOG = registerBlock("amethyst_log",
             new PillarBlock(AbstractBlock.Settings.create().strength(1f)
