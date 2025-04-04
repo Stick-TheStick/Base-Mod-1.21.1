@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/template_seagrass",
   "textures": {
-    "all": "basemod:block/withered_grass"
+    "texture": "basemod:block/withered_grass"
   }
 }

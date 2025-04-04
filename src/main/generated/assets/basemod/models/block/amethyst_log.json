@@ -1,8 +1,7 @@
 {
-  "parent": "minecraft:block/cube_bottom_top",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "bottom": "basemod:block/amethyst_log_bottom",
-    "side": "basemod:block/amethyst_log_side",
-    "top": "basemod:block/amethyst_log_top"
+    "end": "basemod:block/amethyst_log_top",
+    "side": "basemod:block/amethyst_log_side"
   }
 }

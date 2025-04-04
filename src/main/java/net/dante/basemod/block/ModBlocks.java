@@ -46,7 +46,7 @@ public class ModBlocks {
     public static final Block WITHERED_GRASS_BLOCK = registerBlock(WITHERED_GRASS_BLOCK_KEY, GrassBlock::new,
             AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.GRASS));
     public static final Block AMETHYST_LEAVES = registerBlock(AMETHYST_LEAVES_KEY, Block::new,
-            AbstractBlock.Settings.create().strength(1f).nonOpaque().sounds(BlockSoundGroup.CHERRY_LEAVES).nonOpaque());
+            AbstractBlock.Settings.create().strength(1f).nonOpaque().sounds(BlockSoundGroup.CHERRY_LEAVES));
     public static final Block AMETHYST_LOG = registerBlock(AMETHYST_LOG_KEY, PillarBlock::new,
             AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.WOOD));
     public static final Block AMETHYST_PLANKS = registerBlock(AMETHYST_PLANKS_KEY, Block::new,
@@ -111,7 +111,7 @@ public class ModBlocks {
 
     // 2D blocks
     public static final Block WITHERED_GRASS = registerBlock(createBlockKey("withered_grass"), ShortPlantBlock::new,
-            AbstractBlock.Settings.create().noCollision().burnable().breakInstantly().nonOpaque()
+            AbstractBlock.Settings.create().noCollision().burnable().breakInstantly()
                     .sounds(BlockSoundGroup.GRASS));
 
     // Fences

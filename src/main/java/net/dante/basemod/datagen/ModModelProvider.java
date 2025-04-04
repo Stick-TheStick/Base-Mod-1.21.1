@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.TexturedModel;
+import net.minecraft.block.PlantBlock;
+import net.minecraft.data.family.BlockFamily;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -15,15 +17,13 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
-        blockStateModelGenerator.registerSingleton(ModBlocks.AMETHYST_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerSingleton(ModBlocks.LONG_NOSE_BLOCK, TexturedModel.CUBE_ALL);
-        blockStateModelGenerator.registerSingleton(ModBlocks.WITHERED_GRASS, TexturedModel.CUBE_ALL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AMETHYST_LEAVES);
+        blockStateModelGenerator.registerSingleton(ModBlocks.WITHERED_GRASS, TexturedModel.TEMPLATE_SEAGRASS);
         blockStateModelGenerator.registerSingleton(ModBlocks.WITHERED_GRASS_BLOCK, TexturedModel.CUBE_TOP);
         blockStateModelGenerator.registerSingleton(ModBlocks.AMETHYST_GRASS_BLOCK, TexturedModel.CUBE_TOP);
-        blockStateModelGenerator.registerSingleton(ModBlocks.AMETHYST_LOG, TexturedModel.ORIENTABLE_WITH_BOTTOM);
+        blockStateModelGenerator.registerSingleton(ModBlocks.AMETHYST_LOG, TexturedModel.CUBE_COLUMN);
 
-
-
+        BlockStateModelGenerator.BlockTexturePool longnosepool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LONG_NOSE_BLOCK);
         BlockStateModelGenerator.BlockTexturePool heavybrickpool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HEAVY_STONE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool blackRockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_ROCK);
         BlockStateModelGenerator.BlockTexturePool gildedquartzPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GILDED_QUARTZ_BRICKS);
@@ -79,7 +79,14 @@ public class ModModelProvider extends FabricModelProvider {
         heavybrickpool.stairs(ModBlocks.HEAVY_STONE_TILE_STAIRS);
         heavybrickpool.slab(ModBlocks.HEAVY_STONE_TILE_SLAB);
         heavybrickpool.wall(ModBlocks.HEAVY_STONE_TILE_WALL);
+
+        new BlockFamily.Builder(ModBlocks.LONG_NOSE_BLOCK)
+                .stairs(ModBlocks.LONG_NOSE_BLOCK)
+                .slab(ModBlocks.LONG_NOSE_BLOCK)
+                .fence(ModBlocks.LONG_NOSE_BLOCK)
+                .build();
     }
+
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
